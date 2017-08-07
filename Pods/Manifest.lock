@@ -1,0 +1,27 @@
+PODS:
+  - DeckTransition (1.0.1)
+  - Hero (0.3.6)
+  - LTMorphingLabel (0.5.0)
+  - Pastel (0.3.0)
+  - ShadowImageView (1.6.0)
+  - XLPagerTabStrip (7.0.0)
+
+DEPENDENCIES:
+  - DeckTransition
+  - Hero
+  - LTMorphingLabel
+  - Pastel
+  - ShadowImageView
+  - XLPagerTabStrip (~> 7.0)
+
+SPEC CHECKSUMS:
+  DeckTransition: 5955be19b166bea45a7f22d845283fde807859ac
+  Hero: d3c6f4dd80cdcdbb339be64e57ae3b5c3ab9938c
+  LTMorphingLabel: bc170be74b219b7dae0e5543a44676d16da70ff7
+  Pastel: 738740c84f2b15bbcd96ebe99c4e6c2f5dd42262
+  ShadowImageView: c8cadd7e3e1e6a8e52a02e944a59bbbb048f2a5d
+  XLPagerTabStrip: 9be80a66c6b7d60306b2c0a6004965016d68f813
+
+PODFILE CHECKSUM: d6b1c08fa6a971a063d6e1414af649acbe085ef8
+
+COCOAPODS: 1.2.0

@@ -1,0 +1,6 @@
+framework module Pods_FlickTunes {
+  umbrella header "Pods-FlickTunes-umbrella.h"
+
+  export *
+  module * { export * }
+}
