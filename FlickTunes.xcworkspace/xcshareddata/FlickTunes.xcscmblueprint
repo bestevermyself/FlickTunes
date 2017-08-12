@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "733A6EE2CD90E9EA5095C85CE500178F3DBAE25D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "733A6EE2CD90E9EA5095C85CE500178F3DBAE25D" : 9223372036854775807,
+    "FF277BBF96443A7AD66BBCF80D586F8E3FF7BB4F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E20E79D0-692D-4DC7-A607-1171D311BE26",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "733A6EE2CD90E9EA5095C85CE500178F3DBAE25D" : "FlickTunes\/",
+    "FF277BBF96443A7AD66BBCF80D586F8E3FF7BB4F" : "..\/githubRepositories\/XLPagerTabStrip"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FlickTunes",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FlickTunes.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bestevermyself\/FlickTunes.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "733A6EE2CD90E9EA5095C85CE500178F3DBAE25D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xmartlabs\/XLPagerTabStrip.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FF277BBF96443A7AD66BBCF80D586F8E3FF7BB4F"
+    }
+  ]
+}

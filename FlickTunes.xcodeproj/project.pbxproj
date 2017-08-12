@@ -7,8 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		710D99931F3B38EA001D9E6C /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D99921F3B38EA001D9E6C /* ParentViewController.swift */; };
+		710D99E71F3B536A001D9E6C /* ChildViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D99E61F3B536A001D9E6C /* ChildViewController1.swift */; };
+		710D99E91F3B5376001D9E6C /* ChildViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D99E81F3B5376001D9E6C /* ChildViewController2.swift */; };
+		710D99EB1F3B555D001D9E6C /* TableChildExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710D99EA1F3B555D001D9E6C /* TableChildExampleViewController.swift */; };
+		7148A12E1F3D4DED00EB8944 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7148A12B1F3D4DED00EB8944 /* PostCell.xib */; };
+		7148A12F1F3D4DED00EB8944 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148A12C1F3D4DED00EB8944 /* PostCell.swift */; };
+		7148A1301F3D4DED00EB8944 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148A12D1F3D4DED00EB8944 /* DataProvider.swift */; };
+		717915611F3E1E1B00B6F8A7 /* ArtistsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717915601F3E1E1B00B6F8A7 /* ArtistsTableViewController.swift */; };
+		717915631F3E1E8700B6F8A7 /* ArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 717915621F3E1E8700B6F8A7 /* ArtistCell.xib */; };
+		717915651F3E205800B6F8A7 /* ArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717915641F3E205800B6F8A7 /* ArtistCell.swift */; };
+		717915671F3E327F00B6F8A7 /* ArtistDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717915661F3E327F00B6F8A7 /* ArtistDetailTableViewController.swift */; };
+		717915691F3E4D0B00B6F8A7 /* PlayMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717915681F3E4D0B00B6F8A7 /* PlayMusicViewController.swift */; };
+		7179156B1F3E4D9100B6F8A7 /* SongQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179156A1F3E4D9100B6F8A7 /* SongQuery.swift */; };
+		7179156D1F3E5EA400B6F8A7 /* PlayMusic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7179156C1F3E5EA400B6F8A7 /* PlayMusic.storyboard */; };
+		7179156F1F3E609500B6F8A7 /* ShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7179156E1F3E609500B6F8A7 /* ShadowImageView.swift */; };
 		71B69EFF1F38A4B2002F260F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B69EFE1F38A4B2002F260F /* AppDelegate.swift */; };
-		71B69F011F38A4B2002F260F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B69F001F38A4B2002F260F /* ViewController.swift */; };
 		71B69F041F38A4B2002F260F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B69F021F38A4B2002F260F /* Main.storyboard */; };
 		71B69F061F38A4B2002F260F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B69F051F38A4B2002F260F /* Assets.xcassets */; };
 		71B69F091F38A4B2002F260F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B69F071F38A4B2002F260F /* LaunchScreen.storyboard */; };
@@ -16,9 +30,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		710D99921F3B38EA001D9E6C /* ParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		710D99E61F3B536A001D9E6C /* ChildViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController1.swift; sourceTree = "<group>"; };
+		710D99E81F3B5376001D9E6C /* ChildViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController2.swift; sourceTree = "<group>"; };
+		710D99EA1F3B555D001D9E6C /* TableChildExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableChildExampleViewController.swift; sourceTree = "<group>"; };
+		7148A12B1F3D4DED00EB8944 /* PostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		7148A12C1F3D4DED00EB8944 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		7148A12D1F3D4DED00EB8944 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		717915601F3E1E1B00B6F8A7 /* ArtistsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistsTableViewController.swift; sourceTree = "<group>"; };
+		717915621F3E1E8700B6F8A7 /* ArtistCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArtistCell.xib; sourceTree = "<group>"; };
+		717915641F3E205800B6F8A7 /* ArtistCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistCell.swift; sourceTree = "<group>"; };
+		717915661F3E327F00B6F8A7 /* ArtistDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistDetailTableViewController.swift; sourceTree = "<group>"; };
+		717915681F3E4D0B00B6F8A7 /* PlayMusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayMusicViewController.swift; sourceTree = "<group>"; };
+		7179156A1F3E4D9100B6F8A7 /* SongQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongQuery.swift; sourceTree = "<group>"; };
+		7179156C1F3E5EA400B6F8A7 /* PlayMusic.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayMusic.storyboard; sourceTree = "<group>"; };
+		7179156E1F3E609500B6F8A7 /* ShadowImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowImageView.swift; sourceTree = "<group>"; };
 		71B69EFB1F38A4B2002F260F /* FlickTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B69EFE1F38A4B2002F260F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71B69F001F38A4B2002F260F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		71B69F031F38A4B2002F260F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71B69F051F38A4B2002F260F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71B69F081F38A4B2002F260F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +68,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7175A4341F3F7BCF00BAA33D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				710D99921F3B38EA001D9E6C /* ParentViewController.swift */,
+				717915601F3E1E1B00B6F8A7 /* ArtistsTableViewController.swift */,
+				717915661F3E327F00B6F8A7 /* ArtistDetailTableViewController.swift */,
+				717915681F3E4D0B00B6F8A7 /* PlayMusicViewController.swift */,
+				710D99E61F3B536A001D9E6C /* ChildViewController1.swift */,
+				710D99E81F3B5376001D9E6C /* ChildViewController2.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7175A4351F3F7CD200BAA33D /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				71B69F071F38A4B2002F260F /* LaunchScreen.storyboard */,
+				71B69F021F38A4B2002F260F /* Main.storyboard */,
+				7179156C1F3E5EA400B6F8A7 /* PlayMusic.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		7175A4361F3F7D1C00BAA33D /* Librarys */ = {
+			isa = PBXGroup;
+			children = (
+				7179156E1F3E609500B6F8A7 /* ShadowImageView.swift */,
+				7179156A1F3E4D9100B6F8A7 /* SongQuery.swift */,
+				7148A12D1F3D4DED00EB8944 /* DataProvider.swift */,
+			);
+			name = Librarys;
+			sourceTree = "<group>";
+		};
 		71B69EF21F38A4B1002F260F = {
 			isa = PBXGroup;
 			children = (
@@ -61,12 +122,17 @@
 		71B69EFD1F38A4B2002F260F /* FlickTunes */ = {
 			isa = PBXGroup;
 			children = (
+				7175A4361F3F7D1C00BAA33D /* Librarys */,
+				7175A4351F3F7CD200BAA33D /* StoryBoards */,
+				7175A4341F3F7BCF00BAA33D /* Views */,
 				71B69EFE1F38A4B2002F260F /* AppDelegate.swift */,
-				71B69F001F38A4B2002F260F /* ViewController.swift */,
-				71B69F021F38A4B2002F260F /* Main.storyboard */,
 				71B69F051F38A4B2002F260F /* Assets.xcassets */,
-				71B69F071F38A4B2002F260F /* LaunchScreen.storyboard */,
 				71B69F0A1F38A4B2002F260F /* Info.plist */,
+				710D99EA1F3B555D001D9E6C /* TableChildExampleViewController.swift */,
+				7148A12B1F3D4DED00EB8944 /* PostCell.xib */,
+				7148A12C1F3D4DED00EB8944 /* PostCell.swift */,
+				717915621F3E1E8700B6F8A7 /* ArtistCell.xib */,
+				717915641F3E205800B6F8A7 /* ArtistCell.swift */,
 			);
 			path = FlickTunes;
 			sourceTree = "<group>";
@@ -151,9 +217,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7179156D1F3E5EA400B6F8A7 /* PlayMusic.storyboard in Resources */,
+				717915631F3E1E8700B6F8A7 /* ArtistCell.xib in Resources */,
 				71B69F091F38A4B2002F260F /* LaunchScreen.storyboard in Resources */,
 				71B69F061F38A4B2002F260F /* Assets.xcassets in Resources */,
 				71B69F041F38A4B2002F260F /* Main.storyboard in Resources */,
+				7148A12E1F3D4DED00EB8944 /* PostCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,13 +250,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlickTunes-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		95F57ABE20568CEFE79D6F4F /* [CP] Embed Pods Frameworks */ = {
@@ -196,9 +268,22 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlickTunes/Pods-FlickTunes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DeckTransition/DeckTransition.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/Pastel/Pastel.framework",
+				"${BUILT_PRODUCTS_DIR}/ShadowImageView/ShadowImageView.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeckTransition.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pastel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ShadowImageView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -212,8 +297,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71B69F011F38A4B2002F260F /* ViewController.swift in Sources */,
+				7179156F1F3E609500B6F8A7 /* ShadowImageView.swift in Sources */,
+				717915671F3E327F00B6F8A7 /* ArtistDetailTableViewController.swift in Sources */,
+				710D99931F3B38EA001D9E6C /* ParentViewController.swift in Sources */,
+				7179156B1F3E4D9100B6F8A7 /* SongQuery.swift in Sources */,
+				710D99E71F3B536A001D9E6C /* ChildViewController1.swift in Sources */,
+				710D99E91F3B5376001D9E6C /* ChildViewController2.swift in Sources */,
+				717915611F3E1E1B00B6F8A7 /* ArtistsTableViewController.swift in Sources */,
+				7148A1301F3D4DED00EB8944 /* DataProvider.swift in Sources */,
 				71B69EFF1F38A4B2002F260F /* AppDelegate.swift in Sources */,
+				710D99EB1F3B555D001D9E6C /* TableChildExampleViewController.swift in Sources */,
+				717915651F3E205800B6F8A7 /* ArtistCell.swift in Sources */,
+				717915691F3E4D0B00B6F8A7 /* PlayMusicViewController.swift in Sources */,
+				7148A12F1F3D4DED00EB8944 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +435,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 38ARTP2XDL;
 				INFOPLIST_FILE = FlickTunes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shuhei-hasegawa.FlickTunes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +450,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 38ARTP2XDL;
 				INFOPLIST_FILE = FlickTunes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shuhei-hasegawa.FlickTunes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -379,6 +477,7 @@
 				71B69F0F1F38A4B2002F260F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,26 +1,152 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jRq-4m-dwk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Parent View Controller-->
+        <scene sceneID="82H-oQ-cCc">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jRq-4m-dwk" customClass="ParentViewController" customModule="FlickTunes" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="drc-5I-JIA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xoo-HX-xYQ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="aw0-z3-OEJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQ6-tn-uf0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fEL-IK-sbY" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="mXb-us-F7X"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nDu-FC-N3l">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dQ6-tn-uf0" firstAttribute="leading" secondItem="aw0-z3-OEJ" secondAttribute="leading" id="4Zi-yg-OSj"/>
+                            <constraint firstItem="Xoo-HX-xYQ" firstAttribute="top" secondItem="dQ6-tn-uf0" secondAttribute="bottom" id="ADg-yE-JyJ"/>
+                            <constraint firstItem="fEL-IK-sbY" firstAttribute="top" secondItem="aw0-z3-OEJ" secondAttribute="top" id="Li6-d6-Jaa"/>
+                            <constraint firstAttribute="trailing" secondItem="dQ6-tn-uf0" secondAttribute="trailing" id="ONN-pq-eoB"/>
+                            <constraint firstAttribute="trailing" secondItem="dQ6-tn-uf0" secondAttribute="trailing" id="Vcc-mZ-iun"/>
+                            <constraint firstItem="dQ6-tn-uf0" firstAttribute="leading" secondItem="aw0-z3-OEJ" secondAttribute="leading" id="YYp-XY-e8K"/>
+                            <constraint firstItem="fEL-IK-sbY" firstAttribute="leading" secondItem="aw0-z3-OEJ" secondAttribute="leading" id="eae-o3-I5o"/>
+                            <constraint firstAttribute="trailing" secondItem="fEL-IK-sbY" secondAttribute="trailing" id="hKg-dz-3eA"/>
+                            <constraint firstItem="Xoo-HX-xYQ" firstAttribute="top" secondItem="dQ6-tn-uf0" secondAttribute="bottom" id="qyg-nv-A7U"/>
+                            <constraint firstAttribute="trailing" secondItem="dQ6-tn-uf0" secondAttribute="trailing" id="r5N-N9-aWA"/>
+                            <constraint firstItem="dQ6-tn-uf0" firstAttribute="top" secondItem="aw0-z3-OEJ" secondAttribute="top" id="tyF-7t-Zz8"/>
+                            <constraint firstItem="dQ6-tn-uf0" firstAttribute="top" secondItem="aw0-z3-OEJ" secondAttribute="top" id="vrw-0c-tMk"/>
+                            <constraint firstItem="dQ6-tn-uf0" firstAttribute="top" secondItem="aw0-z3-OEJ" secondAttribute="top" id="xSK-9A-zTh"/>
+                            <constraint firstItem="dQ6-tn-uf0" firstAttribute="leading" secondItem="aw0-z3-OEJ" secondAttribute="leading" id="xi9-xq-TsV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonBarView" destination="fEL-IK-sbY" id="pvh-5A-5I6"/>
+                        <outlet property="containerView" destination="dQ6-tn-uf0" id="0CI-uk-xbb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jtK-6Y-0I0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="51.724137931034484"/>
+        </scene>
+        <!--Child View Controller1-->
+        <scene sceneID="voM-OZ-wLM">
+            <objects>
+                <viewController storyboardIdentifier="child1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nZv-wn-b5c" customClass="ChildViewController1" customModule="FlickTunes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xht-Jg-beg"/>
+                        <viewControllerLayoutGuide type="bottom" id="rXs-5E-rcu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T7E-vq-VJo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gj5-eH-pdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="966" y="52"/>
+        </scene>
+        <!--Child View Controller2-->
+        <scene sceneID="w5t-YH-kwT">
+            <objects>
+                <viewController storyboardIdentifier="child2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4hj-j9-Hba" customClass="ChildViewController2" customModule="FlickTunes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oyB-jh-sIf"/>
+                        <viewControllerLayoutGuide type="bottom" id="SIW-qy-Voc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UTv-Ar-p7d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iez-hU-elb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734" y="52"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="kmS-cU-jrq">
+            <objects>
+                <viewController storyboardIdentifier="player" useStoryboardIdentifierAsRestorationIdentifier="YES" id="El5-HP-bg7" customClass="PlayerViewController" customModule="FlickTunes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9oU-xJ-cb0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fta-j7-MSv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bHY-bP-DgF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blm-f1-uvc">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="player:" destination="El5-HP-bg7" eventType="touchUpInside" id="qP6-SR-kfQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bpv-7P-lQF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2541.5999999999999" y="51.724137931034484"/>
+        </scene>
+        <!--Table Child Example View Controller-->
+        <scene sceneID="lzn-5T-j5b">
+            <objects>
+                <viewController storyboardIdentifier="table" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lXh-3v-gZb" customClass="TableChildExampleViewController" customModule="FlickTunes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dCG-2I-ULB"/>
+                        <viewControllerLayoutGuide type="bottom" id="rss-f4-UW8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xvu-m3-YKy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pb6-4F-G5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3370" y="52"/>
         </scene>
     </scenes>
 </document>

@@ -10,15 +10,14 @@
 		0054224BA8A23E8413AE5452B7C7D9C4 /* HeroIndependentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0D90DE054B2F16255E06D94AE3B20 /* HeroIndependentController.swift */; };
 		00CF7D513DF064760BF24C6A88E3E855 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88BB5FF6E81BDCA49C28500FDF91BB /* Lexer.swift */; };
 		01737CAF685926E6FC4C86A632FBC50A /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 27CF1ACA413C8AFAD970119540CF6F6B /* Info.plist */; };
-		04CAC0E5075BD1177EFE2B0A99FC551D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF675A168132FD52AED630F977FE906 /* UIKit.framework */; };
 		05F0808ED771EDC8628F839F16CB7EC8 /* HeroDefaultAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D956F4F1627C2B6934E91FDD1C218191 /* HeroDefaultAnimator.swift */; };
 		06B331E74C42BA45CA08F581999B9528 /* XLPagerTabStrip.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6C30D38000F7574BD8D19D7AA96B95CC /* XLPagerTabStrip.bundle */; };
 		0A3ECFFD74B6EF62461B3C06BFDC7223 /* DeckPresentingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B05C403F2B95006605CDEED05CEC98 /* DeckPresentingAnimationController.swift */; };
 		0DA21E732596100C88761DA40C290796 /* Nodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABD1CE84A541680F097ACA8DF39FC13 /* Nodes.swift */; };
-		0ED9A691E9EBFFE1ADBEB6AE8B24F876 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
-		11A9C811AC7C41854C43BD002FFDBC0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
+		15FFB9A0EA34A068BEDEE0033DA818DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
 		1D030FD35221838E1BC264DBD51B3A93 /* HeroStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF12FA52E65B37A1F983AB57D3525B33 /* HeroStringConvertible.swift */; };
 		1EFCE8E2E39D6FF98A82A412DCDA22F4 /* CAMediaTimingFunction+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127570D0F7B4C9093C0CC919E832BE4 /* CAMediaTimingFunction+Hero.swift */; };
+		1FACB28B56B10C58950E2E6B02F4BC02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
 		220A91F8CE8669B742B00CD3C81C3910 /* LTMorphingLabel+Anvil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD17EB9A308C17C21C4CAD00B75C018D /* LTMorphingLabel+Anvil.swift */; };
 		23F50CA4807F90EAD369B0D775178498 /* ShadowImageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74452F55271B5D4D02AC30EB74126895 /* ShadowImageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2534806772D59757EC8F1CC16528B9D1 /* LTStringDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C786101D7D3C24460B0B4DE400827D94 /* LTStringDiffResult.swift */; };
@@ -32,17 +31,19 @@
 		355839E3459355665718D6358BA078A6 /* HeroViewPropertyViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF76FB4CA14FBBD87CFE7896470ADB7 /* HeroViewPropertyViewContext.swift */; };
 		3663AD5A53A399294F616BBB090BC98C /* LTMorphingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CA35CAB597199CA47C6FBC140370FD5 /* LTMorphingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		398917958AEE73A2ABA9DE141F4468CE /* DefaultAnimationPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E8660EF8F9A716E1F30D80772C8AB4 /* DefaultAnimationPreprocessor.swift */; };
-		3C7D728E5057D9937D5489945D257304 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */; };
 		3F8B0A80A2276127C916C8EF2CB92C07 /* LTMorphingLabel+Evaporate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EDE987E951D0EFFB6C4515921470C4 /* LTMorphingLabel+Evaporate.swift */; };
 		40177DFD83E234D99E82E2828895D9E7 /* ButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6FAD553148FFF71F11F4516D411B22 /* ButtonBarPagerTabStripViewController.swift */; };
+		4068D0FFB47C3E662E0CC1CC2C43AFAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A50EB224EEDBC66971700D698782 /* UIKit.framework */; };
 		40F98FA651D9D18B89419DAB717DD2B3 /* DeckTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 374844872BF6BEF370476A7A47B82413 /* DeckTransition-dummy.m */; };
 		435090E3FE50A2A659F6F29E79B57B16 /* LTMorphingEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D2FF760E8A349D4D2A502F2DAD409B /* LTMorphingEffect.swift */; };
 		4869E07E4DBCC07C1EA685161558C46B /* Pods-FlickTunes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71679C1E95A216F5E6F5509051797C3E /* Pods-FlickTunes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4871AB82D1BA4619362CECE2C157E239 /* Array+HeroModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8AA037DAB015B7473F9F2F9F589D0 /* Array+HeroModifier.swift */; };
 		4DD9AE46E5A8C9ABA04BF1C0E7EF3B17 /* FXPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B9B5C10074FFDF639C06E9243DC45EC /* FXPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		503F70FCC6E8D6394B5243A4FA2BB520 /* LTMorphingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B942F97D13D602E9DA5D756B91C4D1 /* LTMorphingLabel-dummy.m */; };
-		514B3CCCC0F8433D22686E596FC967E8 /* Fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 10F53BEA1B3AEE5E74A76557E84C0425 /* Fire.png */; };
+		54C4CC9A1D1621448F9B91C1E678790E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A50EB224EEDBC66971700D698782 /* UIKit.framework */; };
 		556D33B99B64976B2F45B25C99B5923E /* LTMorphingLabel+Burn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C008A744490DEF10A78DEC6B9985BA9 /* LTMorphingLabel+Burn.swift */; };
+		582750E7830B8AB9CE781B5E29894B5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7751D4D791D1183FB66D3CCA52CD8E /* QuartzCore.framework */; };
+		5A0F18538C3064600098A17B11F383CF /* Sparkle.png in Resources */ = {isa = PBXBuildFile; fileRef = 632B682F1FF6B01221E58CED3F5EF7DE /* Sparkle.png */; };
 		6095DBFEB1AF8CE765FA645A05459C2B /* CascadePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F07AE510264B66E743C0E2FB1EB88 /* CascadePreprocessor.swift */; };
 		60D4C2BF3BA4C33C737607B227A3CBAE /* BarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B874C8BB490B04EBD2EA246FA11651C3 /* BarPagerTabStripViewController.swift */; };
 		64B4D37F446B67C4A0D546ABF01ECDC6 /* DurationPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811FB39A3539E31A86DB70670DC7262B /* DurationPreprocessor.swift */; };
@@ -57,9 +58,12 @@
 		713768DA2CB74E729CF215D49E6B6005 /* LTCharacterLimbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358100D8D82F88CAAF1B7871F57F2CA0 /* LTCharacterLimbo.swift */; };
 		72DC14E956F45F642E3207BDA5E5E478 /* PastelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE8C80D477DEAF6BB873D5D410B3F6F /* PastelGradient.swift */; };
 		731BDB378A5E0759C89BACA382B6412B /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BCE854A90FC4DC471EB2535093341 /* Regex.swift */; };
+		7366FCE474FD9C23B4C81A54DD560A0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A50EB224EEDBC66971700D698782 /* UIKit.framework */; };
 		73C962CCCBCF65E6519C578FE8F36873 /* IndicatorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D91FA03E308E162955C1926F4C17579 /* IndicatorInfo.swift */; };
 		779C9E2309D7B420ECD556331855314A /* ButtonBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5917BFAFF4D30D520C7B6F1560133FD /* ButtonBarView.swift */; };
 		78198372B6E69FB6E93A6E8D559CE064 /* DeckSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3494A1F2C09A3334218D62E1D7DB39E5 /* DeckSegue.swift */; };
+		7A02109309C1212528B0F761A7E4530A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		7B2F6DED93FECE00717FCF5AAD0A74FF /* Fragment.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DDFECB2F1680DF9285B8A480F0BDE12 /* Fragment.png */; };
 		7D15D8DD9BC19EAF886F9E3BF14279DD /* LTCharacterDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF14C14F82B913E7BA1C5BB6BD2BF84 /* LTCharacterDiffResult.swift */; };
 		7DDE6E306CAB5E388629F6C6A561ECBA /* MatchPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242B045C68700686D86C619FBDC2C210 /* MatchPreprocessor.swift */; };
 		811F7CBC920F031FC577C79B155A5A74 /* DeckTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF4351A61AF740274376F6CCD5356097 /* DeckTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -68,36 +72,33 @@
 		8C9DD6AE81BB31F898F48B5007AFC9BA /* ButtonBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C62BD5BB964B359CA94893A6216151E /* ButtonBarViewCell.swift */; };
 		93B723760D6A34ABA95D4A11D53399D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F10C2908D58D951970B51BDFD49B76B /* Constants.swift */; };
 		97820D7F13162452FBBEE4506EE61B3E /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DDDB2C5EE0F6329DDEEA99101CE796 /* FXPageControl.m */; };
-		9ADF80920D8D2AA4E7C42D4BA1FD64B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
+		992EFA169ED6A8C8B498368AC523B7E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
 		9C1F2A5C483E99BD4D1C7E2ABF21B5FC /* LTMorphingLabel+Fall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4345B1D1B0D5A21B954373AF4C049B9F /* LTMorphingLabel+Fall.swift */; };
 		A271792E9BD1BF7C0F7FC526D33C68C3 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC484372FA7AF828821804DBA49E531 /* Parser.swift */; };
 		A2EFE55E2C0A1C10C7A5367B47C7D562 /* LTMorphingLabel+Pixelate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5E35990EF11E313DBC6854358B465E /* LTMorphingLabel+Pixelate.swift */; };
 		A4CAC116C57F9DD88A91FF725650C2EE /* ShadowImageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44580786D16C51613925734B78F44FB8 /* ShadowImageView-dummy.m */; };
 		A57C83E4371C1D6439BC82CDBEE32E08 /* DispatchQueue+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF1512B6B27C73EB6F80BA7FEB6AEC9 /* DispatchQueue+Hero.swift */; };
 		A72A258B0E285A00B063B0AF42E488A5 /* HeroTargetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34F100D53702F512552E04C28674B7A /* HeroTargetState.swift */; };
-		A82CAB41E30E1A5D25B22F5B5C9CC8F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
 		ABE0F6116DF5C33A310E215DE9AEE769 /* HeroContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACFF97CEF8A5871249F100F18A24B83 /* HeroContext.swift */; };
 		AC78190959872C81167ACC8F0B02BED9 /* Hero-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A96A9EAD59C5AF201571D509E84E2E /* Hero-dummy.m */; };
 		AE43E12320F44A852B4EE33A0DDA5130 /* XLPagerTabStrip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB30D1769C27DCD8B65034E3D885E74 /* XLPagerTabStrip-dummy.m */; };
-		AE82726B85F9488997339A759DDDE999 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
+		AF04AD552E6BE94703E8EC8BEAEEA076 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
 		B03B5CC4D259EEC129F8DCF35675ECDD /* LTMorphingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961D083AE419D3E9423DAEB8426D72D0 /* LTMorphingLabel.swift */; };
-		B0B4176AACC453B465683E1D29D475F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
 		B2D89923566968E8B53670AF68C98D2D /* DeckPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96E2F0B44A22F3218F254DF60BB300E /* DeckPresentationController.swift */; };
-		B3A3CD902BA902869EFE29E5EA88B1F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF675A168132FD52AED630F977FE906 /* UIKit.framework */; };
 		B60255D565D5920B3164BCC0CA1B81C6 /* BaseButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC8105C0AE741F4E46C91691D46ABA2 /* BaseButtonBarPagerTabStripViewController.swift */; };
 		B62A16E73ADAFD9229C560E7C46ADB8E /* HeroModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F1526C15A9A93D6E4BF7EDD1BD0F40 /* HeroModifier.swift */; };
 		B91C90500DB2E2AD1E525BCA795CF63A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3299213BCFD5181A525308E15D34AA /* Utilities.swift */; };
 		BB2873D1E6440D5510A3E40A1F0D38A3 /* LTMorphingLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D683960329847A953AC26A8E5281FFEE /* LTMorphingLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB7E6CA50EF56EF89CECA4DE5FEF66B9 /* HeroCoreAnimationViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9FB8BBE390824D8EDC483E88EC1E5D /* HeroCoreAnimationViewContext.swift */; };
 		BEB47A3CAB4F7D3C8EDA608599417596 /* HeroDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A255F868252ABBB5B2DAF4ED1369BDB /* HeroDebugView.swift */; };
-		BEEC37DE72D6BE4CF2DE214C1C53F8AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF675A168132FD52AED630F977FE906 /* UIKit.framework */; };
-		C025052F8819DF1149FDFA278F08ABE7 /* Fragment.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CE3BFB42AB5EA87F29093479688DC9F /* Fragment.png */; };
+		C1D7C318F2418A5FE5F341B4806DE422 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A50EB224EEDBC66971700D698782 /* UIKit.framework */; };
 		C3876E92B5D48CFC1C10A10AE2B3E812 /* PastelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79CC68C1E4A5077C4F246ACB2870F28 /* PastelView.swift */; };
-		C3B9F1C5F59FBDA935751CA952D09330 /* Smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 9045BB7B5B35C669DE17A4FD84378207 /* Smoke.png */; };
+		C8D8F7EEDDBBE8D2C5D3B5D95C39B70D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A50EB224EEDBC66971700D698782 /* UIKit.framework */; };
 		C95507DA1B541029BB6D04C3B829782D /* XLPagerTabStrip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 196F489FA10B66FD4D422668D9C1C832 /* XLPagerTabStrip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CCACA9026494E6D39D374A4BD303F69C /* CALayer+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB652FB61149C2E314E61E1342959B /* CALayer+Hero.swift */; };
 		CD6A8B9D3D96DFC62E161DEC3EF87955 /* PagerTabStripBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A2FE3718D93DADF38F37248C1D09B /* PagerTabStripBehaviour.swift */; };
 		CE4501723EC8667ADB9698705CC0AA04 /* HeroTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B508320A0E7CF97053DBB92CC680E2D /* HeroTypes.swift */; };
+		CFFCC1F4C0D0D8E6EFCDADC3774E1569 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
 		D0F182F203AF65A7E2FC5B385923808D /* ShadowImageView-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A2AEB3FFCA5444DD0971B5AA9615AF8 /* ShadowImageView-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D48039A4AAAD63B84E8041F816AAE5CC /* BasePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37BCFDE36288FA2FB0CB1D5CCF50A8 /* BasePreprocessor.swift */; };
 		DCB1FB8F3A7104901C9068A5B0001658 /* ButtonCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 9073A2CF6D8B74C739CE2DC1BC84273B /* ButtonCell.xib */; };
@@ -105,21 +106,20 @@
 		DE4FD12FD11924E71640A08AF3AFA2E4 /* SourcePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155608906304D652DBBA37D09336D822 /* SourcePreprocessor.swift */; };
 		DE7E529EF406ECBC3185D907151CDE78 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9154F923DFF050E040159D5FE9EEF1 /* Hero.swift */; };
 		E03F419287F929DF0C7FCE665F0E96EA /* Pastel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 250A6BA4C55C3B7E2B9CB9E1FDEABA03 /* Pastel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E250AA9522C3A393033ECF5CB29E1449 /* Fire.png in Resources */ = {isa = PBXBuildFile; fileRef = F06C0262F777D6BE4C1395E8505A10C7 /* Fire.png */; };
 		E347A540C01BF862B2321252B02024D0 /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E72AE928D927F43B35F3C775AC310 /* SwipeDirection.swift */; };
 		E4268869183317C5E39F79399AB6EFFB /* Pastel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48789A0D970C9AFF2365009B0C0CC3E3 /* Pastel-dummy.m */; };
 		E4AC978E0F217D6DD415BCB21EBBD4F0 /* PagerTabStripError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229F037B9D64B6477068798D05D24A4F /* PagerTabStripError.swift */; };
 		E57BB5C5A234EE3344BB5AAECFC7CC7A /* HeroModifier+HeroStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971DBDD8DB84D9C400A532828074770F /* HeroModifier+HeroStringConvertible.swift */; };
 		E91E80F3AA36C095A59C59A446271BF0 /* CG+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E8127347A78CEE7A45EA884E585C36 /* CG+Hero.swift */; };
-		EA88F6E4E913422542CF155A5A02FC0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF675A168132FD52AED630F977FE906 /* UIKit.framework */; };
-		EEE2AFE0AF072D743978764741F3C541 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
 		F40D2DEE836EA32F960F91345D3C0363 /* ShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F26F788AC3B3744B0A7BEFAD784F6D /* ShadowImageView.swift */; };
 		F6213F968F6846894BC65C2E9886A59B /* Pods-FlickTunes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D027B9BD90DF141CF59077A0C363DA /* Pods-FlickTunes-dummy.m */; };
-		F6DD905071390172C5BEAAD528C460D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF675A168132FD52AED630F977FE906 /* UIKit.framework */; };
-		F95D41C5B434547597F053486620C965 /* Sparkle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D74705D18DE7F17F1D900CBFB65317D /* Sparkle.png */; };
 		FB2A3DF093265777881222FE1C414BF7 /* Extension+CIContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C996FE81B2E67467444F11A1C8C38C /* Extension+CIContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBAEB0A61D7D3D4DD723D11671A814BB /* Smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = B0FE4D862BCDB86BB8A20321D3C38D60 /* Smoke.png */; };
 		FCE80BE8699380E50BF18F169137F156 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E7EF7BFDDC65DA9A98F3DD982F22C /* BarView.swift */; };
 		FEA469A68D259A996FFCEAEDDD5E71EC /* DeckDismissingAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE12D557F5BEE0D285365E5E8CB86FE /* DeckDismissingAnimationController.swift */; };
 		FEC2476A58CFD80E2A2B33217175ACEE /* DeckTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6640FE9B4E6670C6B304CE8AFE27497 /* DeckTransitioningDelegate.swift */; };
+		FFD7EC2E785ED7B99BA0071E5C16F575 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,7 +180,6 @@
 		0A2AEB3FFCA5444DD0971B5AA9615AF8 /* ShadowImageView-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ShadowImageView-Bridging-Header.h"; path = "Sources/Extension+CIContext/ShadowImageView-Bridging-Header.h"; sourceTree = "<group>"; };
 		0C62BD5BB964B359CA94893A6216151E /* ButtonBarViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarViewCell.swift; path = Sources/ButtonBarViewCell.swift; sourceTree = "<group>"; };
 		0CBECFAC16680B1382D33EFADEF8EBF3 /* Pastel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Pastel.modulemap; sourceTree = "<group>"; };
-		10F53BEA1B3AEE5E74A76557E84C0425 /* Fire.png */ = {isa = PBXFileReference; includeInIndex = 1; name = Fire.png; path = LTMorphingLabel/Particles/Fire.png; sourceTree = "<group>"; };
 		119F9D9CBD2E5473A46601BE1E623162 /* LTMorphingLabel+Sparkle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Sparkle.swift"; path = "LTMorphingLabel/LTMorphingLabel+Sparkle.swift"; sourceTree = "<group>"; };
 		155608906304D652DBBA37D09336D822 /* SourcePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourcePreprocessor.swift; path = Sources/Preprocessors/SourcePreprocessor.swift; sourceTree = "<group>"; };
 		15D6D1D70A0896CF74589DC01A01175E /* Hero.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Hero.modulemap; sourceTree = "<group>"; };
@@ -204,14 +203,15 @@
 		2A43B1214D2A11AD4B7AA1CA2E080831 /* Pods-FlickTunes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlickTunes.debug.xcconfig"; sourceTree = "<group>"; };
 		2FE12D557F5BEE0D285365E5E8CB86FE /* DeckDismissingAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeckDismissingAnimationController.swift; path = Source/DeckDismissingAnimationController.swift; sourceTree = "<group>"; };
 		32C0D90DE054B2F16255E06D94AE3B20 /* HeroIndependentController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroIndependentController.swift; path = Sources/HeroIndependentController.swift; sourceTree = "<group>"; };
+		33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3494A1F2C09A3334218D62E1D7DB39E5 /* DeckSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeckSegue.swift; path = Source/DeckSegue.swift; sourceTree = "<group>"; };
 		358100D8D82F88CAAF1B7871F57F2CA0 /* LTCharacterLimbo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTCharacterLimbo.swift; path = LTMorphingLabel/LTCharacterLimbo.swift; sourceTree = "<group>"; };
 		374844872BF6BEF370476A7A47B82413 /* DeckTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DeckTransition-dummy.m"; sourceTree = "<group>"; };
+		3917A50EB224EEDBC66971700D698782 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		3B508320A0E7CF97053DBB92CC680E2D /* HeroTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroTypes.swift; path = Sources/HeroTypes.swift; sourceTree = "<group>"; };
 		3B9B5C10074FFDF639C06E9243DC45EC /* FXPageControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXPageControl.h; path = Sources/FXPageControl.h; sourceTree = "<group>"; };
 		3C7F07AE510264B66E743C0E2FB1EB88 /* CascadePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CascadePreprocessor.swift; path = Sources/Preprocessors/CascadePreprocessor.swift; sourceTree = "<group>"; };
 		3D3299213BCFD5181A525308E15D34AA /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Source/Utilities.swift; sourceTree = "<group>"; };
-		3D74705D18DE7F17F1D900CBFB65317D /* Sparkle.png */ = {isa = PBXFileReference; includeInIndex = 1; name = Sparkle.png; path = LTMorphingLabel/Particles/Sparkle.png; sourceTree = "<group>"; };
 		411488E2E562D5C40D2803CB0722A048 /* XLPagerTabStrip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = XLPagerTabStrip.modulemap; sourceTree = "<group>"; };
 		4281D2FDD4E9B9B9C4C950879ACEBD16 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LTMorphingLabel.framework; path = LTMorphingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4345B1D1B0D5A21B954373AF4C049B9F /* LTMorphingLabel+Fall.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Fall.swift"; path = "LTMorphingLabel/LTMorphingLabel+Fall.swift"; sourceTree = "<group>"; };
@@ -226,11 +226,11 @@
 		53B5EC8A261E954262FD82791FCAD6B7 /* UIView+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Hero.swift"; path = "Sources/Extensions/UIView+Hero.swift"; sourceTree = "<group>"; };
 		5A255F868252ABBB5B2DAF4ED1369BDB /* HeroDebugView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroDebugView.swift; path = "Sources/Debug Plugin/HeroDebugView.swift"; sourceTree = "<group>"; };
 		5A37BCFDE36288FA2FB0CB1D5CCF50A8 /* BasePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasePreprocessor.swift; path = Sources/Preprocessors/BasePreprocessor.swift; sourceTree = "<group>"; };
-		5BF675A168132FD52AED630F977FE906 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5C9154F923DFF050E040159D5FE9EEF1 /* Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hero.swift; path = Sources/Hero.swift; sourceTree = "<group>"; };
 		5CA35CAB597199CA47C6FBC140370FD5 /* LTMorphingLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LTMorphingLabel.h; path = LTMorphingLabel/LTMorphingLabel.h; sourceTree = "<group>"; };
 		5E0029D0934EDB18F436C239D78D0760 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XLPagerTabStrip.framework; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F32160DA8910F6A600FFC39F35F4B03 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		632B682F1FF6B01221E58CED3F5EF7DE /* Sparkle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Sparkle.png; path = LTMorphingLabel/Particles/Sparkle.png; sourceTree = "<group>"; };
 		63F1526C15A9A93D6E4BF7EDD1BD0F40 /* HeroModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroModifier.swift; path = Sources/HeroModifier.swift; sourceTree = "<group>"; };
 		67EDE987E951D0EFFB6C4515921470C4 /* LTMorphingLabel+Evaporate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Evaporate.swift"; path = "LTMorphingLabel/LTMorphingLabel+Evaporate.swift"; sourceTree = "<group>"; };
 		6C30D38000F7574BD8D19D7AA96B95CC /* XLPagerTabStrip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XLPagerTabStrip.bundle; path = XLPagerTabStrip.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,15 +240,14 @@
 		720E7EF7BFDDC65DA9A98F3DD982F22C /* BarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarView.swift; path = Sources/BarView.swift; sourceTree = "<group>"; };
 		74452F55271B5D4D02AC30EB74126895 /* ShadowImageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShadowImageView-umbrella.h"; sourceTree = "<group>"; };
 		76FF3CDA60F5977B3B205C5118E8C106 /* Hero-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hero-umbrella.h"; sourceTree = "<group>"; };
-		7CE3BFB42AB5EA87F29093479688DC9F /* Fragment.png */ = {isa = PBXFileReference; includeInIndex = 1; name = Fragment.png; path = LTMorphingLabel/Particles/Fragment.png; sourceTree = "<group>"; };
 		7D2BCE854A90FC4DC471EB2535093341 /* Regex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Regex.swift; path = Sources/Parser/Regex.swift; sourceTree = "<group>"; };
 		7DF14C14F82B913E7BA1C5BB6BD2BF84 /* LTCharacterDiffResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTCharacterDiffResult.swift; path = LTMorphingLabel/LTCharacterDiffResult.swift; sourceTree = "<group>"; };
 		811FB39A3539E31A86DB70670DC7262B /* DurationPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DurationPreprocessor.swift; path = Sources/Preprocessors/DurationPreprocessor.swift; sourceTree = "<group>"; };
 		83EEEEB476593210950EC8DA732E4AC9 /* Pastel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pastel.framework; path = Pastel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F26F788AC3B3744B0A7BEFAD784F6D /* ShadowImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShadowImageView.swift; path = Sources/ShadowImageView.swift; sourceTree = "<group>"; };
 		89FD0EDC2C4D8556C2D095CF5C51F45E /* HeroBaseController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroBaseController.swift; path = Sources/HeroBaseController.swift; sourceTree = "<group>"; };
+		8DDFECB2F1680DF9285B8A480F0BDE12 /* Fragment.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Fragment.png; path = LTMorphingLabel/Particles/Fragment.png; sourceTree = "<group>"; };
 		8E39B9E116AB0FEA90EF5AA1E35F847D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9045BB7B5B35C669DE17A4FD84378207 /* Smoke.png */ = {isa = PBXFileReference; includeInIndex = 1; name = Smoke.png; path = LTMorphingLabel/Particles/Smoke.png; sourceTree = "<group>"; };
 		9073A2CF6D8B74C739CE2DC1BC84273B /* ButtonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ButtonCell.xib; path = Sources/ButtonCell.xib; sourceTree = "<group>"; };
 		91E8660EF8F9A716E1F30D80772C8AB4 /* DefaultAnimationPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultAnimationPreprocessor.swift; path = Sources/DefaultAnimationPreprocessor.swift; sourceTree = "<group>"; };
 		937CDB4BF6A8A49FAA9DCD0C7624908D /* PagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripViewController.swift; path = Sources/PagerTabStripViewController.swift; sourceTree = "<group>"; };
@@ -267,6 +266,7 @@
 		A95AA6210D4EF510641F1AC47BDD822A /* Hero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hero.framework; path = Hero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA82F33AEEFA75F37B7FAEAB73103D75 /* UIKit+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Hero.swift"; path = "Sources/Extensions/UIKit+Hero.swift"; sourceTree = "<group>"; };
 		AACFF97CEF8A5871249F100F18A24B83 /* HeroContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroContext.swift; path = Sources/HeroContext.swift; sourceTree = "<group>"; };
+		B0FE4D862BCDB86BB8A20321D3C38D60 /* Smoke.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Smoke.png; path = LTMorphingLabel/Particles/Smoke.png; sourceTree = "<group>"; };
 		B2DDDB2C5EE0F6329DDEEA99101CE796 /* FXPageControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXPageControl.m; path = Sources/FXPageControl.m; sourceTree = "<group>"; };
 		B31924BB5A2C1CB0B70D42F36261DB67 /* Pods-FlickTunes-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlickTunes-acknowledgements.plist"; sourceTree = "<group>"; };
 		B3AB496631DC56C55D33CD6A0EA370AC /* Pods-FlickTunes-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlickTunes-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -299,16 +299,15 @@
 		D956F4F1627C2B6934E91FDD1C218191 /* HeroDefaultAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroDefaultAnimator.swift; path = Sources/Animator/HeroDefaultAnimator.swift; sourceTree = "<group>"; };
 		DC88BB5FF6E81BDCA49C28500FDF91BB /* Lexer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lexer.swift; path = Sources/Parser/Lexer.swift; sourceTree = "<group>"; };
 		DF12FA52E65B37A1F983AB57D3525B33 /* HeroStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroStringConvertible.swift; path = Sources/HeroStringConvertible.swift; sourceTree = "<group>"; };
-		E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		E60B93D1D6A55F2CECBC4AF31ED1C40C /* Pastel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pastel-prefix.pch"; sourceTree = "<group>"; };
 		E683BE56648FF62B291841B01E53ED12 /* DeckTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeckTransition.xcconfig; sourceTree = "<group>"; };
 		E6CF5F8E8D6D148D925229BFDC7B6E65 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EABD1CE84A541680F097ACA8DF39FC13 /* Nodes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Nodes.swift; path = Sources/Parser/Nodes.swift; sourceTree = "<group>"; };
-		EC32878090C4B2B93381956161EC0930 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		ED0D4FA29D75D3477DE76E451B9DF5A1 /* HeroPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeroPlugin.swift; path = Sources/HeroPlugin.swift; sourceTree = "<group>"; };
 		EDC484372FA7AF828821804DBA49E531 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser/Parser.swift; sourceTree = "<group>"; };
 		EDFFD88DDAA50E5E45DC0FB37FD8798E /* ShadowImageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ShadowImageView.modulemap; sourceTree = "<group>"; };
 		EF4351A61AF740274376F6CCD5356097 /* DeckTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeckTransition-umbrella.h"; sourceTree = "<group>"; };
+		F06C0262F777D6BE4C1395E8505A10C7 /* Fire.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Fire.png; path = LTMorphingLabel/Particles/Fire.png; sourceTree = "<group>"; };
 		F0D027B9BD90DF141CF59077A0C363DA /* Pods-FlickTunes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlickTunes-dummy.m"; sourceTree = "<group>"; };
 		F1C1665B26D34E6C599D5FF9E18EE04B /* LTMorphingLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LTMorphingLabel.modulemap; sourceTree = "<group>"; };
 		F2D2FF760E8A349D4D2A502F2DAD409B /* LTMorphingEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LTMorphingEffect.swift; path = LTMorphingLabel/LTMorphingEffect.swift; sourceTree = "<group>"; };
@@ -316,6 +315,7 @@
 		F8E8127347A78CEE7A45EA884E585C36 /* CG+Hero.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CG+Hero.swift"; path = "Sources/Extensions/CG+Hero.swift"; sourceTree = "<group>"; };
 		F98BEA71685EAF588BFD5F2F3B4C408F /* ShadowImageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShadowImageView-prefix.pch"; sourceTree = "<group>"; };
 		F9F694921CE50A3FC1E7418F18C85396 /* DeckTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeckTransition-prefix.pch"; sourceTree = "<group>"; };
+		FB7751D4D791D1183FB66D3CCA52CD8E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		FE4D77F6A1512379F65AF01276CB2F36 /* IgnoreSubviewModifiersPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IgnoreSubviewModifiersPreprocessor.swift; path = Sources/Preprocessors/IgnoreSubviewModifiersPreprocessor.swift; sourceTree = "<group>"; };
 		FF460CDBDC37263CC3AE5806F1FBF630 /* Pods-FlickTunes-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlickTunes-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -325,8 +325,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEE2AFE0AF072D743978764741F3C541 /* Foundation.framework in Frameworks */,
-				F6DD905071390172C5BEAAD528C460D5 /* UIKit.framework in Frameworks */,
+				992EFA169ED6A8C8B498368AC523B7E2 /* Foundation.framework in Frameworks */,
+				54C4CC9A1D1621448F9B91C1E678790E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,9 +334,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A82CAB41E30E1A5D25B22F5B5C9CC8F1 /* Foundation.framework in Frameworks */,
-				3C7D728E5057D9937D5489945D257304 /* QuartzCore.framework in Frameworks */,
-				04CAC0E5075BD1177EFE2B0A99FC551D /* UIKit.framework in Frameworks */,
+				15FFB9A0EA34A068BEDEE0033DA818DA /* Foundation.framework in Frameworks */,
+				582750E7830B8AB9CE781B5E29894B5D /* QuartzCore.framework in Frameworks */,
+				7366FCE474FD9C23B4C81A54DD560A0F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,8 +344,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE82726B85F9488997339A759DDDE999 /* Foundation.framework in Frameworks */,
-				BEEC37DE72D6BE4CF2DE214C1C53F8AC /* UIKit.framework in Frameworks */,
+				AF04AD552E6BE94703E8EC8BEAEEA076 /* Foundation.framework in Frameworks */,
+				C1D7C318F2418A5FE5F341B4806DE422 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,8 +353,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ED9A691E9EBFFE1ADBEB6AE8B24F876 /* Foundation.framework in Frameworks */,
-				B3A3CD902BA902869EFE29E5EA88B1F4 /* UIKit.framework in Frameworks */,
+				CFFCC1F4C0D0D8E6EFCDADC3774E1569 /* Foundation.framework in Frameworks */,
+				4068D0FFB47C3E662E0CC1CC2C43AFAB /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +362,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0B4176AACC453B465683E1D29D475F8 /* Foundation.framework in Frameworks */,
+				7A02109309C1212528B0F761A7E4530A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,8 +377,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ADF80920D8D2AA4E7C42D4BA1FD64B1 /* Foundation.framework in Frameworks */,
-				EA88F6E4E913422542CF155A5A02FC0A /* UIKit.framework in Frameworks */,
+				1FACB28B56B10C58950E2E6B02F4BC02 /* Foundation.framework in Frameworks */,
+				C8D8F7EEDDBBE8D2C5D3B5D95C39B70D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +386,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A9C811AC7C41854C43BD002FFDBC0C /* Foundation.framework in Frameworks */,
+				FFD7EC2E785ED7B99BA0071E5C16F575 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +462,7 @@
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E5E9260013FA223D81B907D9285F6EA1 /* iOS */,
+				93A319F2C1969B7AA0B17444A3F8BA22 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -515,22 +515,11 @@
 				1B5E35990EF11E313DBC6854358B465E /* LTMorphingLabel+Pixelate.swift */,
 				119F9D9CBD2E5473A46601BE1E623162 /* LTMorphingLabel+Sparkle.swift */,
 				C786101D7D3C24460B0B4DE400827D94 /* LTStringDiffResult.swift */,
-				3A2BE138E82ACEA02C5C52060A786F8D /* Resources */,
+				99360E250D077574FA39BCD08E3E10AE /* Resources */,
 				3AFDCDF04C5C6CC7D3C11DF6E143C930 /* Support Files */,
 			);
 			name = LTMorphingLabel;
 			path = LTMorphingLabel;
-			sourceTree = "<group>";
-		};
-		3A2BE138E82ACEA02C5C52060A786F8D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				10F53BEA1B3AEE5E74A76557E84C0425 /* Fire.png */,
-				7CE3BFB42AB5EA87F29093479688DC9F /* Fragment.png */,
-				9045BB7B5B35C669DE17A4FD84378207 /* Smoke.png */,
-				3D74705D18DE7F17F1D900CBFB65317D /* Sparkle.png */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		3AFDCDF04C5C6CC7D3C11DF6E143C930 /* Support Files */ = {
@@ -633,6 +622,27 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		93A319F2C1969B7AA0B17444A3F8BA22 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */,
+				FB7751D4D791D1183FB66D3CCA52CD8E /* QuartzCore.framework */,
+				3917A50EB224EEDBC66971700D698782 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		99360E250D077574FA39BCD08E3E10AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F06C0262F777D6BE4C1395E8505A10C7 /* Fire.png */,
+				8DDFECB2F1680DF9285B8A480F0BDE12 /* Fragment.png */,
+				B0FE4D862BCDB86BB8A20321D3C38D60 /* Smoke.png */,
+				632B682F1FF6B01221E58CED3F5EF7DE /* Sparkle.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		BB86D1EB90F29482CA6DB14813CB0860 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -688,16 +698,6 @@
 				5E0029D0934EDB18F436C239D78D0760 /* XLPagerTabStrip.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		E5E9260013FA223D81B907D9285F6EA1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				EC32878090C4B2B93381956161EC0930 /* Foundation.framework */,
-				E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */,
-				5BF675A168132FD52AED630F977FE906 /* UIKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		F0E3FE542047E9108B7A155FB97EB65E /* Support Files */ = {
@@ -825,7 +825,7 @@
 				4075A2D82A70F8CBB84F0FF3D77F44AA /* Sources */,
 				1F62AFC08895AB254D46B4ECC6931D36 /* Frameworks */,
 				E19D0AD0562BD9B880571349E087F2A3 /* Headers */,
-				8737DBC96075980D465A9943ED820602 /* Resources */,
+				AEDE394367F5030A06E9FD631E9BC3E5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -933,7 +933,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -961,22 +961,22 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8737DBC96075980D465A9943ED820602 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				514B3CCCC0F8433D22686E596FC967E8 /* Fire.png in Resources */,
-				C025052F8819DF1149FDFA278F08ABE7 /* Fragment.png in Resources */,
-				C3B9F1C5F59FBDA935751CA952D09330 /* Smoke.png in Resources */,
-				F95D41C5B434547597F053486620C965 /* Sparkle.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		99EACB154EB336A7933F65F4D1BA762E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6ECFEC523210D2B40B473E07559526AE /* ButtonCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEDE394367F5030A06E9FD631E9BC3E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E250AA9522C3A393033ECF5CB29E1449 /* Fire.png in Resources */,
+				7B2F6DED93FECE00717FCF5AAD0A74FF /* Fragment.png in Resources */,
+				FBAEB0A61D7D3D4DD723D11671A814BB /* Smoke.png in Resources */,
+				5A0F18538C3064600098A17B11F383CF /* Sparkle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1177,216 +1177,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		052899CA82E76A7CC12ACEA9EA03B248 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A43B1214D2A11AD4B7AA1CA2E080831 /* Pods-FlickTunes.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FlickTunes/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FlickTunes/Pods-FlickTunes.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FlickTunes;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		1C679700BFBA62A5B60BF6C75988C70C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E683BE56648FF62B291841B01E53ED12 /* DeckTransition.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DeckTransition/DeckTransition-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DeckTransition/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DeckTransition/DeckTransition.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = DeckTransition;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		45A8CD19FA7083C57415B732B5CF67DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29A8C799391AC87DD0AC4F83B768844E /* Pastel.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pastel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pastel/Pastel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Pastel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4BAC272AA72CD0423A5266B9280DF9EE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A68603B556797791B3D1A5017DE4E0CE /* ShadowImageView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ShadowImageView/ShadowImageView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ShadowImageView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ShadowImageView/ShadowImageView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ShadowImageView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		748AA021725C812690ED75425581A6BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29A8C799391AC87DD0AC4F83B768844E /* Pastel.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pastel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pastel/Pastel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Pastel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7B685F946D3AC9C48CE2B345BF735E41 /* Debug */ = {
+		095B932C00E5DE050346E5D0FE0872DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A36407C4C5D099A76A0C2DD58F8007CA /* LTMorphingLabel.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1408,6 +1203,7 @@
 				PRODUCT_NAME = LTMorphingLabel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1416,93 +1212,119 @@
 			};
 			name = Debug;
 		};
-		82E7421276690A2F39F2D1EB993E21BD /* Debug */ = {
+		09E138528826C583823DC2814FFCD4ED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A68603B556797791B3D1A5017DE4E0CE /* ShadowImageView.xcconfig */;
+			baseConfigurationReference = CD2598657EBD3A6AC546F5AF149854E2 /* Pods-FlickTunes.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ShadowImageView/ShadowImageView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ShadowImageView/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlickTunes/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ShadowImageView/ShadowImageView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ShadowImageView;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlickTunes/Pods-FlickTunes.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlickTunes;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8B82533F4C395347A15888375F1CE643 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A01CF7106F0C84FDFB9F14F976693A4 /* XLPagerTabStrip.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = XLPagerTabStrip;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
-		986196D8366196F30A3BCB3F98F8493B /* Debug */ = {
+		16D894CE00778367AD834052FA2D1905 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C3DD6D21A6CAB21A2DB1E0A8D6D6393 /* Hero.xcconfig */;
+			baseConfigurationReference = A36407C4C5D099A76A0C2DD58F8007CA /* LTMorphingLabel.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Hero/Hero-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Hero/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LTMorphingLabel/LTMorphingLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LTMorphingLabel/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Hero/Hero.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Hero;
+				MODULEMAP_FILE = "Target Support Files/LTMorphingLabel/LTMorphingLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LTMorphingLabel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		9F1047587AC9D8249B74E4E6E45C6347 /* Release */ = {
+		268BCA775835D92531D932C905FF7F6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29A8C799391AC87DD0AC4F83B768844E /* Pastel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pastel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pastel/Pastel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Pastel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		28CFE12A5220897F5BA8265FA9ACE2A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A01CF7106F0C84FDFB9F14F976693A4 /* XLPagerTabStrip.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1524,6 +1346,8 @@
 				PRODUCT_NAME = XLPagerTabStrip;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1531,10 +1355,11 @@
 			};
 			name = Release;
 		};
-		B2E999F177B951DECE1B99DD9D1561F5 /* Release */ = {
+		43D99DE4BC59FC9B08FBAE038D895F51 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD2598657EBD3A6AC546F5AF149854E2 /* Pods-FlickTunes.release.xcconfig */;
+			baseConfigurationReference = 6C3DD6D21A6CAB21A2DB1E0A8D6D6393 /* Hero.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1546,27 +1371,131 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FlickTunes/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Hero/Hero-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hero/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FlickTunes/Pods-FlickTunes.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Hero/Hero.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FlickTunes;
+				PRODUCT_NAME = Hero;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		BE176D0F71304A7F76F8FB651F22AA43 /* Debug */ = {
+		60808776F4BDEEECF6DAEA9C25345BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29A8C799391AC87DD0AC4F83B768844E /* Pastel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pastel/Pastel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pastel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pastel/Pastel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Pastel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		869C1088A1858E81BFE3273F1BE3753F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C3DD6D21A6CAB21A2DB1E0A8D6D6393 /* Hero.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Hero/Hero-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hero/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Hero/Hero.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Hero;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		88D037E09BDA7334BC76CFB5FC2B263B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A68603B556797791B3D1A5017DE4E0CE /* ShadowImageView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ShadowImageView/ShadowImageView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ShadowImageView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ShadowImageView/ShadowImageView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ShadowImageView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B82533F4C395347A15888375F1CE643 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A01CF7106F0C84FDFB9F14F976693A4 /* XLPagerTabStrip.xcconfig */;
 			buildSettings = {
@@ -1581,17 +1510,18 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Debug;
+			name = Release;
 		};
-		C1EF89672017B9E35A18601EBF942D1D /* Release */ = {
+		8CE4ACEED425860EB932A2D9081D05C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E683BE56648FF62B291841B01E53ED12 /* DeckTransition.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1604,22 +1534,60 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/DeckTransition/DeckTransition.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = DeckTransition;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+		916314430E41E2FE33D92E7B4E514550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A01CF7106F0C84FDFB9F14F976693A4 /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		97803B46811A9BDB5E70FA1303AFBFFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1627,10 +1595,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -1651,18 +1622,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		D58F76445200F6097078744D3E36EE07 /* Release */ = {
+		BA34E903C0C53C463C879DAFA512C4F5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A36407C4C5D099A76A0C2DD58F8007CA /* LTMorphingLabel.xcconfig */;
+			baseConfigurationReference = E683BE56648FF62B291841B01E53ED12 /* DeckTransition.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1674,16 +1647,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LTMorphingLabel/LTMorphingLabel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LTMorphingLabel/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DeckTransition/DeckTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DeckTransition/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LTMorphingLabel/LTMorphingLabel.modulemap";
+				MODULEMAP_FILE = "Target Support Files/DeckTransition/DeckTransition.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = LTMorphingLabel;
+				PRODUCT_NAME = DeckTransition;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1691,42 +1666,72 @@
 			};
 			name = Release;
 		};
-		EF83A67AAB503FB6DFD8122376F5DF2C /* Release */ = {
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C3DD6D21A6CAB21A2DB1E0A8D6D6393 /* Hero.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Hero/Hero-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Hero/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Hero/Hero.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Hero;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		F569CF041E9A5608675D4B67F492089B /* Debug */ = {
+		BE176D0F71304A7F76F8FB651F22AA43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A01CF7106F0C84FDFB9F14F976693A4 /* XLPagerTabStrip.xcconfig */;
 			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E1B0F968A8A21E2F109556E23A5AC624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A68603B556797791B3D1A5017DE4E0CE /* ShadowImageView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1738,16 +1743,56 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ShadowImageView/ShadowImageView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ShadowImageView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ShadowImageView/ShadowImageView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = XLPagerTabStrip;
+				PRODUCT_NAME = ShadowImageView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F44B0909642DC5990B8EF94CE08653E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A43B1214D2A11AD4B7AA1CA2E080831 /* Pods-FlickTunes.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FlickTunes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlickTunes/Pods-FlickTunes.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlickTunes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1762,8 +1807,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
-				156284431C64CB05C59BDA0595A1E95A /* Release */,
+				97803B46811A9BDB5E70FA1303AFBFFE /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1780,8 +1825,8 @@
 		94B572DE6BCC2685D0650ED42A1B1074 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F569CF041E9A5608675D4B67F492089B /* Debug */,
-				9F1047587AC9D8249B74E4E6E45C6347 /* Release */,
+				916314430E41E2FE33D92E7B4E514550 /* Debug */,
+				28CFE12A5220897F5BA8265FA9ACE2A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1789,8 +1834,8 @@
 		9C6593740037C02E9291E1477CEB6528 /* Build configuration list for PBXNativeTarget "Pastel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				45A8CD19FA7083C57415B732B5CF67DF /* Debug */,
-				748AA021725C812690ED75425581A6BC /* Release */,
+				60808776F4BDEEECF6DAEA9C25345BD4 /* Debug */,
+				268BCA775835D92531D932C905FF7F6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1798,8 +1843,8 @@
 		B2D7BE26821F640A8C5474E17BA97AA8 /* Build configuration list for PBXNativeTarget "ShadowImageView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				82E7421276690A2F39F2D1EB993E21BD /* Debug */,
-				4BAC272AA72CD0423A5266B9280DF9EE /* Release */,
+				E1B0F968A8A21E2F109556E23A5AC624 /* Debug */,
+				88D037E09BDA7334BC76CFB5FC2B263B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1807,8 +1852,8 @@
 		B8394F7F4ED193131234BC7F85FF37CF /* Build configuration list for PBXNativeTarget "Pods-FlickTunes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				052899CA82E76A7CC12ACEA9EA03B248 /* Debug */,
-				B2E999F177B951DECE1B99DD9D1561F5 /* Release */,
+				F44B0909642DC5990B8EF94CE08653E7 /* Debug */,
+				09E138528826C583823DC2814FFCD4ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1816,8 +1861,8 @@
 		C1291CF685CE0226B8EB9F5347779246 /* Build configuration list for PBXNativeTarget "LTMorphingLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B685F946D3AC9C48CE2B345BF735E41 /* Debug */,
-				D58F76445200F6097078744D3E36EE07 /* Release */,
+				095B932C00E5DE050346E5D0FE0872DB /* Debug */,
+				16D894CE00778367AD834052FA2D1905 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1825,8 +1870,8 @@
 		D6DED4535F841BD78B49E046B4C3A36B /* Build configuration list for PBXNativeTarget "Hero" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				986196D8366196F30A3BCB3F98F8493B /* Debug */,
-				EF83A67AAB503FB6DFD8122376F5DF2C /* Release */,
+				869C1088A1858E81BFE3273F1BE3753F /* Debug */,
+				43D99DE4BC59FC9B08FBAE038D895F51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1834,8 +1879,8 @@
 		DEC556B7F89F6FD4DA1AB9DAEF1BE817 /* Build configuration list for PBXNativeTarget "DeckTransition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C679700BFBA62A5B60BF6C75988C70C /* Debug */,
-				C1EF89672017B9E35A18601EBF942D1D /* Release */,
+				8CE4ACEED425860EB932A2D9081D05C6 /* Debug */,
+				BA34E903C0C53C463C879DAFA512C4F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Mcp-7K-aaF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Play Music View Controller-->
+        <scene sceneID="b8Q-6e-dLi">
+            <objects>
+                <viewController storyboardIdentifier="PlayMusicVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mcp-7K-aaF" customClass="PlayMusicViewController" customModule="FlickTunes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wlf-rf-mMx"/>
+                        <viewControllerLayoutGuide type="bottom" id="wgB-zx-ksk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1k8-8r-ixL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="album1" translatesAutoresizingMaskIntoConstraints="NO" id="TRD-GT-U69">
+                                <rect key="frame" x="46" y="97" width="283" height="283"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="albumArt"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="u0L-TB-dMO" customClass="ShadowImageView" customModule="FlickTunes">
+                                <rect key="frame" x="46" y="97" width="283" height="283"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="blurRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="23" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="album1"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageCornerRaidus">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadiusOffSetPercentage">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="zPosition">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffSetByX">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffSetByY">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowAlpha">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BRz-gC-JGx" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                                <rect key="frame" x="188" y="398" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="albumTitle"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="morphingEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gpu-gv-vmE" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                                <rect key="frame" x="188" y="406" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.25490196079999999" green="0.28627450980000002" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="artist"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="morphingProgress">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="morphingDuration">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="morphingEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9c-hx-Om7">
+                                <rect key="frame" x="164" y="539" width="48" height="48"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="2NX-LJ-E6D"/>
+                                    <constraint firstAttribute="width" constant="48" id="zA6-RK-IOV"/>
+                                </constraints>
+                                <state key="normal" image="play"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="playButton"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifiers" value="rotate(-1.6) zPosition(2)"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="musicPlayButton:" destination="Mcp-7K-aaF" eventType="touchUpInside" id="lEv-gw-YMO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pba-sT-vDk">
+                                <rect key="frame" x="232" y="539" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="LDA-6f-YPx"/>
+                                    <constraint firstAttribute="height" constant="48" id="NqE-yQ-AIu"/>
+                                </constraints>
+                                <color key="tintColor" red="0.25490196079999999" green="0.28627450980000002" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="forward"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="musicNext:" destination="Mcp-7K-aaF" eventType="touchUpInside" id="ev5-jl-Nuw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6og-W3-m5Y">
+                                <rect key="frame" x="96" y="539" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Okm-Kw-XFh"/>
+                                    <constraint firstAttribute="width" constant="48" id="a3F-fX-IdP"/>
+                                </constraints>
+                                <color key="tintColor" red="0.25490196079999999" green="0.28627450980000002" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="rewind"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="musicForward:" destination="Mcp-7K-aaF" eventType="touchUpInside" id="2oR-1t-kJD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gF-sp-AUx">
+                                <rect key="frame" x="16" y="539" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="2qz-Ig-nQQ"/>
+                                    <constraint firstAttribute="width" constant="48" id="8Fa-FM-BHn"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="repeatAll"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="musicRepeat:" destination="Mcp-7K-aaF" eventType="touchUpInside" id="rfq-Av-QHY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7H2-Yp-V5d">
+                                <rect key="frame" x="311" y="539" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="ipI-cT-5Mw"/>
+                                    <constraint firstAttribute="width" constant="48" id="vw8-fx-mpf"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="shuffle"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="musicShuffle:" destination="Mcp-7K-aaF" eventType="touchUpInside" id="8Tm-bm-XSA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjz-XB-OdC">
+                                <rect key="frame" x="4" y="28" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="482-oG-lyk"/>
+                                    <constraint firstAttribute="width" constant="48" id="tQ8-Cd-QhY"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="ic_keyboard_arrow_down"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifiers" value="fade translate(0, -150)"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="back"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="albumSelect:" destination="Mcp-7K-aaF" eventType="touchUpInside" id="ZS4-5h-Xrh"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bRq-tU-Fzb">
+                                <rect key="frame" x="44" y="479" width="287" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Lu3-ib-M9v"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="volumeSliderEvent:" destination="Mcp-7K-aaF" eventType="valueChanged" id="aEY-JS-yL9"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXG-D3-C8z">
+                                <rect key="frame" x="176" y="41" width="22" height="22"/>
+                                <state key="normal" image="home"/>
+                                <connections>
+                                    <action selector="actionHome:" destination="Mcp-7K-aaF" eventType="touchUpInside" id="yd2-gy-zNh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7H2-Yp-V5d" firstAttribute="centerY" secondItem="8gF-sp-AUx" secondAttribute="centerY" id="3BM-sT-47d"/>
+                            <constraint firstItem="TRD-GT-U69" firstAttribute="centerX" secondItem="1k8-8r-ixL" secondAttribute="centerX" id="5te-1k-gUD"/>
+                            <constraint firstItem="u0L-TB-dMO" firstAttribute="top" secondItem="TRD-GT-U69" secondAttribute="top" id="6AJ-MZ-bsO"/>
+                            <constraint firstItem="8gF-sp-AUx" firstAttribute="leading" secondItem="1k8-8r-ixL" secondAttribute="leadingMargin" id="6nk-eD-vFT"/>
+                            <constraint firstItem="pba-sT-vDk" firstAttribute="centerY" secondItem="6og-W3-m5Y" secondAttribute="centerY" id="A8f-sx-KrF"/>
+                            <constraint firstItem="pba-sT-vDk" firstAttribute="leading" secondItem="h9c-hx-Om7" secondAttribute="trailing" constant="20" id="AtS-HY-X2l"/>
+                            <constraint firstItem="u0L-TB-dMO" firstAttribute="bottom" secondItem="TRD-GT-U69" secondAttribute="bottom" id="Bp2-79-Yjp"/>
+                            <constraint firstItem="bRq-tU-Fzb" firstAttribute="leading" secondItem="1k8-8r-ixL" secondAttribute="leadingMargin" constant="30" id="ELh-lI-Ppq"/>
+                            <constraint firstItem="Gpu-gv-vmE" firstAttribute="top" secondItem="BRz-gC-JGx" secondAttribute="bottom" constant="8" id="FXM-aB-Uno"/>
+                            <constraint firstItem="JXG-D3-C8z" firstAttribute="top" secondItem="wlf-rf-mMx" secondAttribute="bottom" constant="20" id="JEf-KP-9zB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TRD-GT-U69" secondAttribute="trailing" constant="30" id="KHD-n6-NbF"/>
+                            <constraint firstItem="BRz-gC-JGx" firstAttribute="centerX" secondItem="1k8-8r-ixL" secondAttribute="centerX" id="NIL-Hl-aTp"/>
+                            <constraint firstItem="TRD-GT-U69" firstAttribute="centerY" secondItem="1k8-8r-ixL" secondAttribute="centerY" constant="-95" id="Nj4-7X-08C"/>
+                            <constraint firstItem="bRq-tU-Fzb" firstAttribute="top" secondItem="u0L-TB-dMO" secondAttribute="bottom" constant="99" id="NwV-Sp-xTA"/>
+                            <constraint firstItem="JXG-D3-C8z" firstAttribute="centerX" secondItem="1k8-8r-ixL" secondAttribute="centerX" id="TPh-4t-ywq"/>
+                            <constraint firstItem="7H2-Yp-V5d" firstAttribute="trailing" secondItem="1k8-8r-ixL" secondAttribute="trailingMargin" id="TgL-dT-ttY"/>
+                            <constraint firstItem="h9c-hx-Om7" firstAttribute="leading" secondItem="6og-W3-m5Y" secondAttribute="trailing" constant="20" id="W1H-hD-hK9"/>
+                            <constraint firstItem="u0L-TB-dMO" firstAttribute="trailing" secondItem="TRD-GT-U69" secondAttribute="trailing" id="WX9-OB-t0l"/>
+                            <constraint firstItem="BRz-gC-JGx" firstAttribute="top" secondItem="TRD-GT-U69" secondAttribute="bottom" constant="18" id="aEJ-9g-jXT"/>
+                            <constraint firstItem="TRD-GT-U69" firstAttribute="width" secondItem="TRD-GT-U69" secondAttribute="height" multiplier="1:1" id="cgY-Bw-mAj"/>
+                            <constraint firstItem="u0L-TB-dMO" firstAttribute="leading" secondItem="TRD-GT-U69" secondAttribute="leading" id="dPS-G2-Bcz"/>
+                            <constraint firstItem="h9c-hx-Om7" firstAttribute="centerX" secondItem="1k8-8r-ixL" secondAttribute="centerX" id="ewR-jf-90i"/>
+                            <constraint firstItem="h9c-hx-Om7" firstAttribute="centerY" secondItem="8gF-sp-AUx" secondAttribute="centerY" id="f55-at-v6p"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bRq-tU-Fzb" secondAttribute="trailing" constant="30" id="haB-q7-N6q"/>
+                            <constraint firstItem="wgB-zx-ksk" firstAttribute="top" secondItem="h9c-hx-Om7" secondAttribute="bottom" constant="80" id="jWs-8v-S4R"/>
+                            <constraint firstItem="Gpu-gv-vmE" firstAttribute="centerX" secondItem="1k8-8r-ixL" secondAttribute="centerX" id="nFz-jm-xWU"/>
+                            <constraint firstItem="Tjz-XB-OdC" firstAttribute="top" secondItem="wlf-rf-mMx" secondAttribute="bottom" constant="8" id="p7u-0o-8yR"/>
+                            <constraint firstItem="h9c-hx-Om7" firstAttribute="centerY" secondItem="6og-W3-m5Y" secondAttribute="centerY" id="prA-bA-cX5"/>
+                            <constraint firstItem="Tjz-XB-OdC" firstAttribute="leading" secondItem="1k8-8r-ixL" secondAttribute="leadingMargin" constant="-12" id="v2S-y7-S6U"/>
+                            <constraint firstItem="TRD-GT-U69" firstAttribute="leading" secondItem="1k8-8r-ixL" secondAttribute="leadingMargin" constant="30" id="yWG-5Q-BIo"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="albumBackground"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y7L-oB-cRS">
+                        <barButtonItem key="leftBarButtonItem" image="home" id="ekh-Rk-l3f">
+                            <connections>
+                                <action selector="hero_dismissViewController" destination="Mcp-7K-aaF" id="MQz-A3-3zb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="musicArtWork" destination="TRD-GT-U69" id="SMd-SV-fLA"/>
+                        <outlet property="musicArtWorkShadow" destination="u0L-TB-dMO" id="Yct-xp-Qdl"/>
+                        <outlet property="musicArtist" destination="Gpu-gv-vmE" id="fnI-bu-3w0"/>
+                        <outlet property="musicPlayButton" destination="h9c-hx-Om7" id="xoq-nL-lLW"/>
+                        <outlet property="musicRepeatButton" destination="8gF-sp-AUx" id="nBf-qM-1Ga"/>
+                        <outlet property="musicShuffleButton" destination="7H2-Yp-V5d" id="foa-JH-wx9"/>
+                        <outlet property="musicTitle" destination="BRz-gC-JGx" id="tQQ-7a-rQh"/>
+                        <outlet property="volumeSlider" destination="bRq-tU-Fzb" id="9xv-iL-4ZO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="he1-mh-pbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048.8" y="1616.9415292353824"/>
+        </scene>
+        <!--Song List Table View Controller-->
+        <scene sceneID="rn3-Le-tJX">
+            <objects>
+                <tableViewController id="E8U-6D-vNx" customClass="SongListTableViewController" customModule="FlickTunes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="caF-7y-ac4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="kjX-mY-Z8R" customClass="SongListTableViewCell" customModule="FlickTunes" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kjX-mY-Z8R" id="GaJ-1y-nSf">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="E8U-6D-vNx" id="d1E-B1-exP"/>
+                            <outlet property="delegate" destination="E8U-6D-vNx" id="q3h-Pl-CJ0"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C15-Og-GkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1920.8" y="1616.9415292353824"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="album1" width="1024" height="1024"/>
+        <image name="forward" width="24" height="19"/>
+        <image name="home" width="23" height="23"/>
+        <image name="ic_keyboard_arrow_down" width="24" height="24"/>
+        <image name="play" width="22" height="24"/>
+        <image name="repeatAll" width="25" height="19"/>
+        <image name="rewind" width="24" height="19"/>
+        <image name="shuffle" width="24" height="20"/>
+    </resources>
+</document>

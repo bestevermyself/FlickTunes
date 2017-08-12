@@ -12,7 +12,7 @@ DEPENDENCIES:
   - LTMorphingLabel
   - Pastel
   - ShadowImageView
-  - XLPagerTabStrip (~> 7.0)
+  - XLPagerTabStrip
 
 SPEC CHECKSUMS:
   DeckTransition: 5955be19b166bea45a7f22d845283fde807859ac
@@ -22,6 +22,6 @@ SPEC CHECKSUMS:
   ShadowImageView: c8cadd7e3e1e6a8e52a02e944a59bbbb048f2a5d
   XLPagerTabStrip: 9be80a66c6b7d60306b2c0a6004965016d68f813
 
-PODFILE CHECKSUM: d6b1c08fa6a971a063d6e1414af649acbe085ef8
+PODFILE CHECKSUM: 97b4ccf37b47b867b26ae4cd782c59707e4f9acc
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.3.1
