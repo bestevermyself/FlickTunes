@@ -8,36 +8,88 @@
 
 import MediaPlayer
 
-public var selectedMusic: Int? {
-    get {
-        return UserDefaults.standard.object(forKey: "selectedMusic") as? Int
+class PlaySongs {
+    
+    // MPMediaQuery情報を保存する
+    public var query: MPMediaQuery? {
+        get {
+            if let _data:NSData = UserDefaults.standard.object(forKey: "query") as? NSData {
+                return NSKeyedUnarchiver.unarchiveObject(with: _data as Data) as? MPMediaQuery
+            }
+            return MPMediaQuery.songs()
+//            return UserDefaults.standard.object(forKey: "query") as? MPMediaQuery
+        }
+        set {
+            let data = NSKeyedArchiver.archivedData(withRootObject: newValue!)
+            UserDefaults.standard.setValue(data, forKey: "query")
+            UserDefaults.standard.synchronize()
+            
+//            UserDefaults.standard.setValue(newValue!, forKey: "query")
+//            UserDefaults.standard.synchronize()
+        }
     }
-    set {
-        UserDefaults.standard.set(newValue!, forKey: "selectedMusic")
-        UserDefaults.standard.synchronize()
+
+    // 現在再生対象の曲リスト（[MPMediaItems]）を保存する
+    public var songs: [MPMediaItem]? {
+        get {
+            if let _data:NSData = UserDefaults.standard.object(forKey: "songs") as? NSData {
+                return NSKeyedUnarchiver.unarchiveObject(with: _data as Data) as? [MPMediaItem]
+            }
+            return MPMediaQuery.songs().items
+//            return UserDefaults.standard.object(forKey: "songs") as? [MPMediaItem]
+        }
+        set {
+            let data = NSKeyedArchiver.archivedData(withRootObject: newValue!)
+            UserDefaults.standard.setValue(data, forKey: "songs")
+            UserDefaults.standard.synchronize()
+            
+//            UserDefaults.standard.set(newValue!, forKey: "songs")
+//            UserDefaults.standard.synchronize()
+        }
     }
+
+    // 現在選択されている曲のIDを保存する
+    public var selectedMusic: Int? {
+        get {
+            return UserDefaults.standard.object(forKey: "selectedMusic") as? Int
+        }
+        set {
+            UserDefaults.standard.set(newValue!, forKey: "selectedMusic")
+            UserDefaults.standard.synchronize()
+        }
+    }
+
+    // シャッフル対象の曲のIDリストを保存する
+    public var selectedShuffleList: [String]? {
+        get {
+            return UserDefaults.standard.object(forKey: "selectedShuffleList") as? [String]
+        }
+        set {
+            UserDefaults.standard.set(newValue!, forKey: "selectedShuffleList")
+            UserDefaults.standard.synchronize()
+        }
+    }
+
 }
  
 struct SongInfo {
     var title: String
     var album: String
     var artist: String
-//    var artwork: MPMediaItemArtwork
+    var artwork: MPMediaItemArtwork
     var persistentID: NSNumber
 //    var genre: String
 //    var playCount: UInt64
     
-    /*
-    init(title: String, album: String, artist: String, persistentID: NSNumber) {
+    init(title: String, album: String, artist: String, artwork: MPMediaItemArtwork, persistentID: NSNumber) {
         self.title = title
         self.album = album
         self.artist = artist
-//        self.artwork = artwork
+        self.artwork = artwork
         self.persistentID = persistentID
 //        self.genre = genre
 //        self.playCount = playCount
     }
-    */
 }
 
 // アルバム情報
@@ -97,7 +149,7 @@ class SongQuery {
                     title:  song.value( forProperty: MPMediaItemPropertyTitle ) as! String,
                     album: song.value( forProperty: MPMediaItemPropertyAlbumTitle ) as! String,
                     artist: song.value( forProperty: MPMediaItemPropertyArtist ) as! String,
-//                    artwork: artwork!,
+                    artwork: artwork!,
                     persistentID: song.value( forProperty: MPMediaItemPropertyPersistentID ) as! NSNumber
                 )
                 

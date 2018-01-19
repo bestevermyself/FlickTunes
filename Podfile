@@ -7,11 +7,15 @@ target 'FlickTunes' do
 
   # Pods for FlickTunes
 
-  pod 'Hero'
+#  pod 'Hero'
   pod 'Pastel'
   pod 'ShadowImageView'
-  pod 'LTMorphingLabel'
+#  pod 'LTMorphingLabel'
   pod 'DeckTransition'
   pod 'XLPagerTabStrip'
+  pod 'KUIPopOver'
+  pod 'Floaty'
+  pod 'PopupDialog'
+  pod 'MarqueeLabel/Swift'
 
 end

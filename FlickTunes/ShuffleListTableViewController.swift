@@ -16,7 +16,7 @@ class ShuffleListTableViewController: UITableViewController {
     var singleArtistList: [String] = []
     var singleJacketList: [UIImage] = []
     
-    var songs: [SongInfo] = []
+    var songs: [MPMediaItem] = []
     var song: MPMediaItem = MPMediaItem()
     var songQuery: SongQuery = SongQuery()
     
@@ -80,11 +80,19 @@ class ShuffleListTableViewController: UITableViewController {
 //        let playMusicVC = PlayMusicViewController()
         let storyboard = UIStoryboard(name: "PlayMusic", bundle: nil)
         let playMusicVC = storyboard.instantiateInitialViewController() as! PlayMusicViewController
-        song = songQuery.getItem(songId: songs[indexPath.row].persistentID as! NSNumber)
-        playMusicVC.song = song
-        print(song.title!)
+//        song = songQuery.getItem(songId: songs[indexPath.row].persistentID as! NSNumber)
+//        playMusicVC.song = song
+//        print(song.title!)
         
+        playMusicVC.queryItems = songs
+        playMusicVC.selectedIndex = indexPath.row
         present(playMusicVC, animated: true, completion: nil)
+        /*
+        if let delegate = transitioningDelegate as? DeckTransitioningDelegate {
+			delegate.isDismissEnabled = true
+        }
+        */
+//        present(playMusicVC, animated: true, completion: nil)
         
     }
 
@@ -133,6 +141,7 @@ class ShuffleListTableViewController: UITableViewController {
     }
     */
     
+    
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         guard scrollView.isEqual(tableView) else {
@@ -149,7 +158,7 @@ class ShuffleListTableViewController: UITableViewController {
             if scrollView.contentOffset.y > 0 {
                 
                 scrollView.bounces = true
-                delegate.isDismissEnabled = false
+//                delegate.isDismissEnabled = false
                 
 			} else {
                 
@@ -161,7 +170,7 @@ class ShuffleListTableViewController: UITableViewController {
 				} else {
                     
 					scrollView.bounces = false
-					delegate.isDismissEnabled = true
+//                    delegate.isDismissEnabled = true
                     
 				}
 			}

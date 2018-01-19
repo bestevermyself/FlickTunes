@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E6F18C7C315A084C2F4EECA2B12ACBCD"
+               BlueprintIdentifier = "74EC6D302C54B2412A5B928A3721A569"
                BuildableName = "Pods_FlickTunes.framework"
                BlueprintName = "Pods-FlickTunes"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E6F18C7C315A084C2F4EECA2B12ACBCD"
+            BlueprintIdentifier = "74EC6D302C54B2412A5B928A3721A569"
             BuildableName = "Pods_FlickTunes.framework"
             BlueprintName = "Pods-FlickTunes"
             ReferencedContainer = "container:Pods.xcodeproj">

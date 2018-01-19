@@ -7,17 +7,28 @@
 //
 
 import UIKit
+import Foundation
 import MediaPlayer
 import Pastel
 import ShadowImageView
 import DeckTransition
+import KUIPopOver
+import WebKit
+import PopupDialog
+import MarqueeLabel
 
 class PlayMusicViewController: UIViewController {
     
+    let playSongs = PlaySongs()
+    
     @IBOutlet var musicArtWorkShadow: ShadowImageView!
     @IBOutlet var musicArtWork: UIImageView!
-    @IBOutlet var musicTitle: UILabel!
+    @IBOutlet var musicArtWorkPlayButton: UIButton!
+    @IBOutlet var musicTitle: MarqueeLabel!
     @IBOutlet var musicArtist: UILabel!
+    @IBOutlet var musicProgress: UIProgressView!
+    @IBOutlet var musicCurrentTime: UILabel!
+    @IBOutlet var musicTotalTime: UILabel!
     
     @IBOutlet var musicPlayButton: UIButton!
     @IBOutlet var musicRepeatButton: UIButton!
@@ -26,32 +37,35 @@ class PlayMusicViewController: UIViewController {
     @IBOutlet var volumeSlider: UISlider!
     private var systemVolumeSlider: UISlider!
     
-    var selectedIndex: IndexPath?
-    var musicId: MPMediaEntityPersistentID = MPMediaEntityPersistentID()
+    var query: MPMediaQuery = MPMediaQuery()
+    var queryItems: [MPMediaItem] = []
+    var singles: [MPMediaItem] = []
+    var selectedIndex: Int?
+//    var musicId: MPMediaEntityPersistentID = MPMediaEntityPersistentID()
+    var playlistId = MPMediaPlaylistPropertyPersistentID
     var isPlaying: Bool?
     
     var albums: [AlbumInfo] = []
     var songQuery: SongQuery = SongQuery()
-//    var song: MPMediaItem = MPMediaItem()
     var song: MPMediaItem = MPMediaItem()
     
-    var player = MPMusicPlayerController()
-    var playlistsName: [String] = []
+    var player = MPMusicPlayerController.systemMusicPlayer
+    var avAudioPlayer = AVAudioPlayer()
+    var time = Timer()
+    var currentTime: Double = 0.0
+    var currentTimeInt: Int = 0
+    var totalTime: Double = 0.0
+    var totalTimeInt: Int = 0
+    
+    var playlistsName: String = ""
     var playlistsIndex: Int = 0
     var playMusicTitle: String = ""
     
-    let notificationCenter = NotificationCenter.default
 //    let songsMediaQuery = MPMediaQuery.songs()
 //    var playlistsMediaQuery = MPMediaQuery.playlists()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let property = MPMediaPropertyPredicate(value: musicId, forProperty: MPMediaItemPropertyPersistentID)
-        let query = MPMediaQuery()
-        query.addFilterPredicate(property)
-        var single = query.items!
-        song = single[0] 
         
         // 音量調整のため、システム音量設定画面をaddview
         self.view.backgroundColor = UIColor.clear
@@ -75,35 +89,16 @@ class PlayMusicViewController: UIViewController {
 //        notificationCenter.addObserver(self, selector: #selector(deviceVolumeChanged(_:)), name: .AVSystemController_SystemVolumeDidChangeNotification, object: nil)
         
         
-        // UserDefaultsから選択された曲のインデックス値を取得
-//        print("受け取ったインデックス値\(selectedMusic!)")
-        
-//        player.pause()
-        player.nowPlayingItem = song
-//        player.play()
-        
-        // 受け取ったIDから楽曲検索
-        /*
-        let property = MPMediaPropertyPredicate(value: musicId, forProperty: MPMediaItemPropertyPersistentID)
-        let query = MPMediaQuery()
-        query.addFilterPredicate(property)
-        let collection = MPMediaItemCollection(items: query.items!)
-        player.setQueue(with: collection)
-        player.play()
-        
-        let predicate = MPMediaPropertyPredicate(value: musicId, forProperty: MPMediaItemPropertyPersistentID)
-        let query = MPMediaQuery(filterPredicates: [predicate])
-        let descriptor = MPMusicPlayerMediaItemQueueDescriptor(query: query)
-        player.nowPlayingItem = descriptor.itemCollection.items.first
-//          MPMusicPlayerController.systemMusicPlayer().append(descriptor)
-        // MPMusicPlayerController.systemMusicPlayer().prepend(descriptor)
-//         player.skipToNextItem()
-        */
-    
-        notificationCenter.addObserver(self, selector: #selector(PlayMusicViewController.nowPlayingItemChanged(_:))
-            , name: .MPMusicPlayerControllerNowPlayingItemDidChange, object: player)
+        // 再生中のItemが変わった時に通知を受け取る
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(PlayMusicViewController.nowPlayingItemChanged(_:)), name: NSNotification.Name.MPMusicPlayerControllerNowPlayingItemDidChange, object: player)
         // 通知の有効化
         player.beginGeneratingPlaybackNotifications()
+        
+//        notificationCenter.addObserver(self, selector: #selector(PlayMusicViewController.nowPlayingItemChanged(_:))
+//            , name: .MPMusicPlayerControllerNowPlayingItemDidChange, object: player)
+        // 通知の有効化
+//        player.beginGeneratingPlaybackNotifications()
         
         // 端末にないアイテムを取り除く
         /*
@@ -160,30 +155,63 @@ class PlayMusicViewController: UIViewController {
         self.view.addGestureRecognizer(swipeLeftGesture)
         self.view.addGestureRecognizer(swipeRightGesture)
         
-        // バックグラウンドグラデーションを有効
-        addPastelBackground()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         
+        //　TODO ローディング画面入れる？
+        
+        // TODO 再生中の曲だったら選曲をスキップする
+        // 再生中に遷移された場合は、再生を止めずに再生曲の情報を表示
+        if (self.selectedIndex != nil) {
+            
+            player.stop()
+            
+            //        player.nowPlayingItem = query.items?[selectedIndex]
+            //        player.nowPlayingItem = singles[selectedIndex]
+            if queryItems.count != 0 {
+                
+                if playlistsName.count != 0 {
+                    
+                    let property = MPMediaPropertyPredicate(value: playlistsName, forProperty: MPMediaPlaylistPropertyName)
+                    query.addFilterPredicate(property)
+                    player.setQueue(with: query)
+                    player.nowPlayingItem = query.items?[selectedIndex!]
+                    print("再生する曲は：" + (query.items?[selectedIndex!].title!)!)
+                    playerPlayEvent()
+                } else {
+                    print("再生する曲は：" + queryItems[selectedIndex!].title!)
+                    
+                    //        let collection = MPMediaItemCollection(items: query.items!) //it needs the "!"
+                    let collection = MPMediaItemCollection(items: queryItems) //it needs the "!"
+                    player.setQueue(with: collection)
+                    player.nowPlayingItem = collection.items[selectedIndex!]
+                    playerPlayEvent()
+                    
+                }
+            } else {
+                player.setQueue(with: MPMediaQuery.songs())
+                player.nowPlayingItem = MPMediaQuery.songs().items?[0]
+                playerPlayEvent()
+            }
+            
+        }
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        // バックグラウンドグラデーションを有効
+        addPastelBackground()
         
         // 再生中ボタンからか？
 //        let vc = ImageGalleryViewController()
 //        vc.isNowPlayButton = false
         
         // 再生中か？
-        isPlaying = isPlayerPlaying()
+//        isPlaying = isPlayerPlaying()
     
-//        player.pause()
-//        player.nowPlayingItem = song
-//        playerPlayEvent()
-            
-        notificationCenter.addObserver(self,
-                                       selector: #selector(systemVolumeDidChange),
-                                       name: NSNotification.Name(rawValue: "AVSystemController_SystemVolumeDidChangeNotification"),
-                                       object: nil
-        )
-        
+
     }
     
     /**
@@ -338,7 +366,7 @@ class PlayMusicViewController: UIViewController {
     }
     
     
-    func nowPlayingItemChanged(_ notification: NSNotification) {
+    @objc func nowPlayingItemChanged(_ notification: NSNotification) {
         
         if let mediaItem = player.nowPlayingItem {
             updateSongInformationUI(mediaItem: mediaItem)
@@ -350,6 +378,11 @@ class PlayMusicViewController: UIViewController {
      - 曲情報を表示する
     */
     func updateSongInformationUI(mediaItem: MPMediaItem) {
+        
+        // 再生時間を表示
+//        time = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateElapsedTime), userInfo: nil, repeats: true)
+        
+//        musicProgress.setProgress(Float((player.nowPlayingItem?.playbackDuration)!), animated: true)
         
         // 曲情報表示
         // (a ?? b は、a != nil ? a! : b を示す演算子です)
@@ -368,6 +401,10 @@ class PlayMusicViewController: UIViewController {
         musicTitle.textColor = .white
         musicTitle.text = mediaItem.title ?? "不明な曲"
         
+        // Continuous Type
+        musicTitle.type = .continuous
+        musicTitle.animationCurve = .easeInOut
+        
         // アートワーク表示
         if let artwork = mediaItem.artwork {
             let image = artwork.image(at: musicArtWork.bounds.size)
@@ -375,7 +412,7 @@ class PlayMusicViewController: UIViewController {
 //            musicArtWork.image = image
         } else {
             // アートワークがないとき(灰色表示)
-            musicArtWork.image = nil
+            musicArtWork.image = UIImage(named: "album1")
             musicArtWork.backgroundColor = UIColor.gray
         }
         
@@ -390,13 +427,38 @@ class PlayMusicViewController: UIViewController {
     }
     
     /**
+     - 再生時間を更新
+    */
+    func updateElapsedTime() {
+        currentTime = player.currentPlaybackTime
+        
+        if !currentTime.isNaN {
+            currentTimeInt = Int(currentTime)
+            let min = currentTimeInt / 60
+            let sec = currentTimeInt % 60
+            musicCurrentTime.text = String(format: "%02d:%02d", min, sec)
+    
+            totalTime = (player.nowPlayingItem?.playbackDuration)!
+            totalTimeInt = Int(totalTime)
+            var totalMin = (totalTimeInt - currentTimeInt) / 60
+            var totalSec = (totalTimeInt - currentTimeInt) % 60
+            musicTotalTime.text = String(format: "%02d:%02d", totalMin, totalSec)
+    
+            // プログレスバーの進捗状況を反映（現在の再生時間／曲の再生時間）
+            musicProgress.progress = Float(currentTime) / Float(totalTime)
+        }
+        
+    }
+    
+    
+    /**
      - タップイベント
     */
-    func singleTap(sender: UITapGestureRecognizer) {
+    @objc func singleTap(sender: UITapGestureRecognizer) {
         print("single Tap!")
     }
     
-    func doubleTap(sender: UITapGestureRecognizer) {
+    @objc func doubleTap(sender: UITapGestureRecognizer) {
         print("double Tap!")
         // SongListTableView
         /*
@@ -407,13 +469,16 @@ class PlayMusicViewController: UIViewController {
         */
         
         // DeckTransitionモーダルView
-        /*
         let modal = SongListTableViewController()
         let transitionDelegate = DeckTransitioningDelegate()
+        
+        let property = MPMediaPropertyPredicate(value: playlistsName, forProperty: MPMediaPlaylistPropertyName)
+        query.addFilterPredicate(property)
+        modal.mediaQuery = query
+        
         modal.transitioningDelegate = transitionDelegate
         modal.modalPresentationStyle = .custom
         present(modal, animated: true, completion: nil)
- */
         
     }
     
@@ -426,23 +491,38 @@ class PlayMusicViewController: UIViewController {
         print("\(touches)")
     }
     
-    func handleSwipeUp(sender: UITapGestureRecognizer) {
+    @objc func handleSwipeUp(sender: UITapGestureRecognizer) {
         
         playerPlayEvent()
+        
+        // アニメーション実行
+        let newImage = UIImage(named: "ic_play_arrow_white")
+        imageCenterShow(image: newImage!)
+        
         print("Swiped Up!!!")
         
     }
     
-    func handleSwipeDown(sender: UITapGestureRecognizer) {
+    @objc func handleSwipeDown(sender: UITapGestureRecognizer) {
         
         playerStopEvent()
+        
+        // アニメーション実行
+        let newImage = UIImage(named: "ic_pause_white")
+        imageCenterShow(image: newImage!)
+        
         print("Swiped Down!!!")
         
     }
     
-    func handleSwipeLeft(sender: UITapGestureRecognizer) {
+    @objc func handleSwipeLeft(sender: UITapGestureRecognizer) {
         
         player.skipToPreviousItem()
+        
+        // アニメーション実行
+        let newImage = UIImage(named: "icons8-Back")
+        imageCenterShow(image: newImage!)
+        
         print("Swiped Left!!!")
         
         /*
@@ -478,9 +558,14 @@ class PlayMusicViewController: UIViewController {
         
     }
     
-    func handleSwipeRight(sender: UITapGestureRecognizer) {
+    @objc func handleSwipeRight(sender: UITapGestureRecognizer) {
         
         player.skipToNextItem()
+        
+        // アニメーション実行
+        let newImage = UIImage(named: "icons8-Forward")
+        imageCenterShow(image: newImage!)
+        
         print("Swiped Right!!!")
         
     }
@@ -513,7 +598,7 @@ class PlayMusicViewController: UIViewController {
      - TODO
        MPMusicPlayerControllerPlaybackStateDidChangeNotificationが送られてきても、
        その時点では、AVAudioSessionの再生状況に反映されてない という問題が発生するため、
-       MPMusicPlayerControllerからの通知を使ってる場合は、その部分で何らかの処理が必要になります。
+       MPMusicPlayerControllerからの通知を使ってる場合は、その部分で何らかの処理が必要
     */
     func isPlayerPlaying() -> Bool {
         let av = AVAudioSession.sharedInstance()
@@ -557,42 +642,254 @@ class PlayMusicViewController: UIViewController {
         volumeSlider.value = volume!
         
     }
+    
+    // 渡された画像を画面中央にアニメーション表示する
+    func imageCenterShow(image: UIImage) {
+        
+        
+        let imageView = UIImageView(image: image)
+        
+        // 画面の縦横幅を取得
+        let screenHeight:CGFloat = view.frame.size.height
+        let screenWidth:CGFloat = view.frame.size.width
+        
+        imageView.frame = CGRect(x: 0, y: screenHeight / 2, width: screenWidth / 3, height: screenWidth / 3)
+        //画面中心に画像を設定
+        imageView.center.x = self.view.center.x
+        //imageView.center.y = self.view.center.y
+        
+        // UIImageViewのインスタンスをビューに追加
+        self.view.addSubview(imageView)
+        
+        
+        
+        //画像縮小の場合
+        //        let screenWidthScale:CGFloat = self.view.bounds.width * 0.8 // 画像の大きさに対して0.8倍
+        //        let scale:CGFloat = screenWidthScale / newImage!.size.width
+        
+        //        tmpImageView.frame = CGRect(x: self.view.bounds.width / 2, y: self.view.bounds.height / 2, width: (newImage?.size.width)! * scale, height: (newImage?.size.height)! * scale)
+        
+        //インスタンスビューに表示して一番前に表示
+        //        self.view.addSubview(tmpImageView)
+        //        self.view.bringSubview(toFront: tmpImageView)
+        
+        
+        
+        
+        //        self.view.addSubview(tmpImageView)
+        //        tmpImageView.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor).isActive = true
+        //        tmpImageView.centerYAnchor.constraint(equalTo: view.layoutMarginsGuide.centerYAnchor).isActive = true
+        
+        UIView.animate(withDuration: 1, delay: 1, options: .curveEaseIn, animations: {
+            imageView.alpha = 0
+        }) { _ in
+            imageView.removeFromSuperview()
+        }
+        
+    }
 
-    @IBAction func albumSelect(_ sender: Any) {
+    @IBAction func albumSelect(_ sender: UIButton) {
         
         // 現在のアルバム情報を取得
+        
+        // PopOverView
+        //Prepare the instance of ContentViewController which is the content of popover.
         /*
-        let albumId = player.nowPlayingItem?.albumPersistentID
-        let property = MPMediaPropertyPredicate(value: albumId, forProperty: MPMediaItemPropertyAlbumPersistentID)
-        let query = MPMediaQuery()
+        let playSinglesListVC = PlaySinglesListViewController()
+        let albumID = player.nowPlayingItem?.albumPersistentID
+        let property = MPMediaPropertyPredicate(value: albumID, forProperty: MPMediaItemPropertyAlbumPersistentID)
+        let query = MPMediaQuery.albums()
         query.addFilterPredicate(property)
-        let singles = query.items as! [MPMediaItem]
+        playSinglesListVC.songs = query.items!
         
-        let imageView = ImageGalleryViewController()
-        imageView.mediaQuery = query
-        
-        for single in singles {
-            print(singles)
-        }
+        let transitionDelegate = DeckTransitioningDelegate()
+        playSinglesListVC.transitioningDelegate = transitionDelegate
+        playSinglesListVC.modalPresentationStyle = .custom
+        present(playSinglesListVC, animated: true, completion: nil)
         */
         
         // DeckTransitionモーダルView
         /*
         let shuffleListTableVC = ShuffleListTableViewController()
-        
-        let album = albums[selectedMusic!]
-        shuffleListTableVC.songs = album.songs
+        let albumID = player.nowPlayingItem?.albumPersistentID
+        let property = MPMediaPropertyPredicate(value: albumID, forProperty: MPMediaItemPropertyAlbumPersistentID)
+        let query = MPMediaQuery.albums()
+        query.addFilterPredicate(property)
+        shuffleListTableVC.songs = query.items!
         
         let transitionDelegate = DeckTransitioningDelegate()
         shuffleListTableVC.transitioningDelegate = transitionDelegate
         shuffleListTableVC.modalPresentationStyle = .custom
         present(shuffleListTableVC, animated: true, completion: nil)
- */
+
+        // KUIPopOverView
         
+        let customViewController = CustomPopOverTableViewController()
+        
+        customViewController.showPopover(sourceView: sender, sourceRect: sender.bounds)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+            customViewController.dismissPopover(animated: true)
+        }
+        
+        */
+        
+        // Create our custom view controller programatically
+//        let vc = PopupTableViewController(nibName: nil, bundle: nil)
+        let playSinglesListVC = PlaySinglesListViewController()
+        
+        // Create the PopupDialog with a completion handler,
+        // called whenever the dialog is dismissed
+        let popup = PopupDialog(viewController: playSinglesListVC, gestureDismissal: false) {
+//            guard let city = vc.selectedCity else { return }
+//            print("User selected city: \(city)")
+        }
+        
+        
+        let albumID = player.nowPlayingItem?.albumPersistentID
+        let property = MPMediaPropertyPredicate(value: albumID, forProperty: MPMediaItemPropertyAlbumPersistentID)
+        let query = MPMediaQuery.albums()
+        query.addFilterPredicate(property)
+        playSinglesListVC.songs = query.items!
+
+        // Create a cancel button for the dialog,
+        // including a button action
+        let cancel = DefaultButton(title: "Cancel") {
+            print("User did not select a city")
+        }
+        
+        // Add the cancel button we just created to the dialog
+        popup.addButton(cancel)
+        
+        // Moreover, we set a list of cities on our custom view controller
+//        vc.cities = ["Munich", "Budapest", "Krakow", "Rome", "Paris", "Nice", "Madrid", "New York", "Moscow", "Peking", "Tokyo"]
+        
+        // We also pass a reference to our PopupDialog to our custom view controller
+        // This way, we can dismiss and manipulate it from there
+        playSinglesListVC.popup = popup
+        
+        // Last but not least: present the PopupDialog
+        present(popup, animated: true, completion: nil)
+        
+        
+        
+    }
+    
+    func prepareForPopoverPresentation(popoverPresentationController: UIPopoverPresentationController)
+    {
+    }
+    
+    func popoverPresentationControllerDidDismissPopover(popoverPresentationController: UIPopoverPresentationController)
+    {
+    }
+    
+    func popoverPresentationControllerShouldDismissPopover(popoverPresentationController: UIPopoverPresentationController) -> Bool
+    {
+        return true
     }
     
     @IBAction func actionHome(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func musicArtWorkPlayButton(_ sender: Any) {
+        playerPlayEvent()
+    }
+    
+}
+
+class DefaultPopOverViewController: UIViewController, UIPopoverPresentationControllerDelegate {
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        modalPresentationStyle = .popover
+        popoverPresentationController?.delegate = self
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - UIPopoverPresentationControllerDelegate
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+    
+}
+
+class CustomPopOverView: UIView, KUIPopOverUsable {
+    
+    var contentSize: CGSize {
+        return CGSize(width: 300.0, height: 400.0)
+    }
+    
+    var arrowDirection: UIPopoverArrowDirection {
+        return .none
+    }
+    
+    lazy var webView: WKWebView = {
+        let webView: WKWebView = WKWebView(frame: self.frame)
+        webView.load(URLRequest(url: URL(string: "http://github.com")!))
+        return webView
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        addSubview(webView)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        webView.frame = self.bounds
+    }
+    
+}
+
+
+class CustomPopOverTableViewController: UITableViewController, KUIPopOverUsable {
+    
+    var uiTableView = UITableView()
+    var items: [String] = ["Cat", "Dog", "Bird"]
+    
+    var contentSize: CGSize {
+        return CGSize(width: 300.0, height: 400.0)
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        uiTableView.frame = UIScreen.main.bounds
+        uiTableView.delegate = self
+        uiTableView.dataSource = self
+        // uiTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        uiTableView.register(UITableViewCell.self, forCellReuseIdentifier: "albumSelectCell")
+        
+        self.view.addSubview(uiTableView)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        uiTableView.frame = view.bounds
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.items.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "albumSelectCell", for: indexPath as IndexPath)
+        cell.textLabel?.text = self.items[indexPath.row]
+        print(self.items[indexPath.row])
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("\(indexPath.row)")
     }
     
 }

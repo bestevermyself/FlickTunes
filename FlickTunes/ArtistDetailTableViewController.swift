@@ -11,9 +11,15 @@ import MediaPlayer
 
 class ArtistDetailTableViewController: UITableViewController {
 
+    var query = MPMediaQuery.albums()
+    
+    var sectionNameList: [String] = []
+    var albumPersistentId: MPMediaEntityPersistentID = UInt64()
+    var albumTitle: String = ""
     var artistName: String = ""
     var mediaItems: [MPMediaItem] = []
     let cellIdentifier = "ArtistCell"
+    var shuffleMusicList: [MPMediaEntityPersistentID] = []
     
     var songQuery: SongQuery = SongQuery()
     
@@ -25,21 +31,14 @@ class ArtistDetailTableViewController: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.allowsSelection = true
         
-        let property = MPMediaPropertyPredicate(value: artistName, forProperty: MPMediaItemPropertyArtist)
-        let query = MPMediaQuery()
+        let property = MPMediaPropertyPredicate(value: albumPersistentId, forProperty: MPMediaItemPropertyAlbumPersistentID)
         query.addFilterPredicate(property)
         mediaItems = query.items!
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         // ボタン作成
         // barButtonSystemItemを変更すればいろいろなアイコンに変更できます
-        var backButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.redo, target: self, action: "actionBackButton")
-        var searchButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.search, target: self, action: "actionSearchButton")
+        var backButton: UIBarButtonItem = UIBarButtonItem(title: "戻る", style: .plain, target: self, action: #selector(ArtistDetailTableViewController.actionBackButton))
+        var searchButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.search, target: self, action: #selector(ArtistDetailTableViewController.actionSearchButton))
         
         //ナビゲーションバーの右側にボタン付与
         self.navigationItem.setLeftBarButtonItems([backButton], animated: true)
@@ -52,7 +51,9 @@ class ArtistDetailTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
+    override func viewWillAppear(_ animated: Bool) {
+        self.title = albumTitle
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -63,11 +64,31 @@ class ArtistDetailTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return mediaItems.count
     }
+    
+    /*
+     セクションの数を返す.
+     */
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return sectionNameList.count
+    }
+
+    /*
+     セクションのタイトルを返す.
+     */
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sectionNameList[section] as? String
+    }
+    
+    
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ArtistCell", for: indexPath) as! ArtistCell
         let mediaItem = mediaItems[indexPath.row]
-
+        
+        // シャッフルリストを作成
+        shuffleMusicList.append(mediaItem.persistentID)
+        
+        // 曲名
         cell.artistName.text = mediaItem.title
         // アートワーク表示
         if let artwork = mediaItem.artwork {
@@ -91,20 +112,30 @@ class ArtistDetailTableViewController: UITableViewController {
         // 「is initial view controller」が設定されている ViewController を取得する
         let playMusicVC = storyboard.instantiateInitialViewController() as! PlayMusicViewController
         
-        let musicId = mediaItems[indexPath.row].persistentID
+//        let musicId = mediaItems[indexPath.row].persistentID
 //        let playMusicVC = PlayMusicViewController()
 //        playMusicVC.song = mediaItems[indexPath.row] as! MPMediaItem
-        playMusicVC.musicId = musicId
+        playMusicVC.selectedIndex = indexPath.row
+        playMusicVC.queryItems = mediaItems
+        playMusicVC.query = query
+        
+//        playMusicVC.musicId = musicId
         navigationController?.present(playMusicVC, animated: true, completion: nil)
     }
     
-    func actionSearchButton(){
+    @objc func actionSearchButton(){
         //searchButtonを押した際の処理を記述
+        for (index, music) in shuffleMusicList.enumerated() {
+            print(shuffleMusicList[index])
+        }
     }
     
-    func actionBackButton(){
+    @objc func actionBackButton(){
         //refreshButtonを押した際の処理を記述
-        dismiss(animated: true, completion: nil)
+//        dismiss(animated: true, completion: nil)
+        
+        //前画面に戻る。
+        self.navigationController?.popViewController(animated: true)
     }
 
 }

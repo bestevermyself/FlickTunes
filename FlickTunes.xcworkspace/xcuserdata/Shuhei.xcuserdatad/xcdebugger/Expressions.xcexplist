@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "PlayMusicViewController.viewDidLoad() -&gt; ():PlayMusicViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "GLOBAL">
+         <PersistentStrings>
+            <PersistentString
+               value = "single">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ParentViewController.viewDidLoad():ParentViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "playMusicVC.isMusicPlayerPlaying()">
+            </PersistentString>
+            <PersistentString
+               value = "playMusicVC.player.nowPlayingItem">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -44,7 +44,7 @@ class SongListTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        mediaQuery = ImageGalleryViewController().mediaQuery
+//        mediaQuery = ImageGalleryViewController().mediaQuery
         
         createSongPlaylist()
         
@@ -87,7 +87,7 @@ class SongListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return songs.count
+        return singleTitleList.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -97,8 +97,8 @@ class SongListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "songCell", for: indexPath) as! SongListTableViewCell
         
         // 2. CustomCellの初期化コードを記述
-        cell.songName.text = songs[indexPath.row].title
-        cell.songArtistName.text = songs[indexPath.row].artist
+        cell.songName.text = singleTitleList[indexPath.row]
+        cell.songArtistName.text = singleArtistList[indexPath.row]
 //        cell.songJacketImage.image = songs[indexPath.row]
         
 //        cell.songName.text = album.songs[indexPath.row]
@@ -181,7 +181,6 @@ class SongListTableViewController: UITableViewController {
             for single in (album.items) {
     //            let id = single.valueForProperty(MPMediaItemPropertyPersistentID).stringValue  // 一意の id
                 let title = single.value(forProperty: MPMediaItemPropertyTitle) as? String  // シングル名
-                print(title)
                 singleTitleList.append(title!)
                 
                 let artist = single.value(forKey: MPMediaItemPropertyArtist) as? String  // アーティスト名
@@ -223,14 +222,14 @@ class SongListTableViewController: UITableViewController {
         
             if scrollView.contentOffset.y > 0 {
                 scrollView.bounces = true
-                delegate.isDismissEnabled = false
+//                delegate.isSwipeToDismissEnabled = false
 			} else {
 				if scrollView.isDecelerating {
 					view.transform = CGAffineTransform(translationX: 0, y: -scrollView.contentOffset.y)
 					scrollView.transform = CGAffineTransform(translationX: 0, y: scrollView.contentOffset.y)
 				} else {
 					scrollView.bounces = false
-					delegate.isDismissEnabled = true
+//                    delegate.isSwipeToDismissEnabled = true
 				}
 			}
         }
